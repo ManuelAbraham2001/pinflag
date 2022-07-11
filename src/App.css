@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+button {
+  border: none;
+  background-color: #fff;
+}
+button:hover {
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar {
+  padding: 20px;
+  box-shadow: -1px 1px 5px 0px #cfc6c6;
+  -webkit-box-shadow: -1px 1px 5px 0px #cfc6c6;
+  -moz-box-shadow: -1px 1px 5px 0px #cfc6c6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navBar__content {
+  gap: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav__content__ul {
+  gap: 100px;
+}
+.nav__content__ul button:focus {
+  color: #33CCCC;
+  border: none;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.logo img {
+  width: 130px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start__free button {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: #33CCCC;
+  color: #fff;
 }
+
+input[type=range]::-webkit-progress-value {
+  background-color: red;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=App.css.map */

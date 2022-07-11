@@ -1,0 +1,16 @@
+$azul: #173554;
+$celeste: #33CCCC;
+$gris: #CCCCCC;
+$grisClaro: #DDDDDD;
+$grisMuyClaro: #F0F0F0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './components/header/header';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

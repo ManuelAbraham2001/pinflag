@@ -1,0 +1,51 @@
+$celeste: #33CCCC;
+
+button{
+    border: none;
+    background-color: #fff;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.navBar{
+    padding: 20px;
+    box-shadow: -1px 1px 5px 0px rgba(207,198,198,1);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(207,198,198,1);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(207,198,198,1);
+}
+
+.navBar__content{
+    gap: 50px;
+}
+
+.nav__content__ul{
+    gap: 100px;
+    button:focus{
+        color: $celeste;
+        border: none;
+        outline: none;
+    }
+}
+
+.logo{
+    img{
+        width: 130px;
+    }
+}
+
+.start__free{
+    button{
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 10px 15px;
+        background-color: $celeste;
+        color: #fff;
+    }
+}
+
+
+input[type=range]::-webkit-progress-value{
+    background-color: red;
+}
+
