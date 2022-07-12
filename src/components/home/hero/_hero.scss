@@ -1,0 +1,46 @@
+$azul: #173554;
+$celeste: #33CCCC;
+$gris: #CCCCCC;
+$grisClaro: #DDDDDD;
+$grisMuyClaro: #F0F0F0;
+
+.hero{
+    padding: 20px;
+    margin: 100px 0;
+}
+
+.hero__content{
+    .hero__title{
+        h1{
+            color: $azul;
+            font-size: 42px;
+            max-width: 500px;
+        }
+
+        p{
+            color: $celeste;
+            font-size: 26px;
+            max-width: 650px;
+            margin: 20px 0;
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $azul;
+            color: #fff;
+            border-radius: 10px;
+            width: 400px;
+            height: 65px;
+            font-size: 24px;
+        }
+    }
+
+    .hero__img{
+        img{
+            width: 400px;
+        }
+    }
+}
+

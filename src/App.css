@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,10 +46,89 @@ input[type=range]::-webkit-progress-value {
   background-color: red;
 }
 
+.hero {
+  padding: 20px;
+  margin: 100px 0;
+}
+
+.hero__content .hero__title h1 {
+  color: #173554;
+  font-size: 42px;
+  max-width: 500px;
+}
+.hero__content .hero__title p {
+  color: #33CCCC;
+  font-size: 26px;
+  max-width: 650px;
+  margin: 20px 0;
+}
+.hero__content .hero__title a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #173554;
+  color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  height: 65px;
+  font-size: 24px;
+}
+.hero__content .hero__img img {
+  width: 400px;
+}
+
+.servicios__nav__item {
+  gap: 10px;
+}
+.servicios__nav__item button {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: #CCCCCC;
+  border-radius: 50%;
+}
+.servicios__nav__item button:focus-within {
+  background-color: #33CCCC;
+}
+.servicios__nav__item span {
+  color: #173554;
+}
+
+.servicios__info {
+  margin: 100px 0;
+  gap: 50px;
+}
+.servicios__info .servicios__info__img img {
+  width: 610px;
+}
+.servicios__info .servicios__info__title h2 {
+  color: #173554;
+  font-size: 42px;
+  max-width: 500px;
+}
+.servicios__info .servicios__info__title p {
+  color: #33CCCC;
+  font-size: 26px;
+  max-width: 650px;
+  margin: 20px 0;
+}
+.servicios__info .servicios__info__title a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #173554;
+  color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  height: 65px;
+  font-size: 24px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=App.css.map */
