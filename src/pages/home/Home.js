@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from './hero/Hero'
-import Servicios from './servicios/Servicios'
+import Hero from '../../components/hero/Hero'
+import Servicios from '../servicios/Servicios'
 
 const Home = () => {
   return (

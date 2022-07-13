@@ -7,9 +7,7 @@ const Header = () => {
     <header>
         <nav className="navBar flex items-center justify-around">
             <div className="navBar__content flex items-center justify-start">
-                <div className="logo">
-                    <img src="https://pinflag.cl/wp-content/uploads/2021/06/logo_blog-13-1.png" alt="Pinflag logo" />
-                </div>
+
                 <div className="nav__content__ul flex">
                     <div className="nav__content_li">
                         <button autoFocus /*  onBlur={({ target }) => target.focus() }*/ >
