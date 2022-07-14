@@ -2,7 +2,7 @@ import NavLinks from "./NavLinks";
 
 const DesktopNavigation = () => {
   return (
-    <nav>
+    <nav className="hidden lg:flex">
       <NavLinks />
     </nav>
   );

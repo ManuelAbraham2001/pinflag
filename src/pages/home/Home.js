@@ -5,8 +5,8 @@ import Servicios from '../servicios/Servicios'
 const Home = () => {
   return (
     <main>
-      <Hero></Hero>
-      <Servicios></Servicios>
+      {/* <Hero></Hero>
+      <Servicios></Servicios> */}
     </main>
   )
 }

@@ -12,19 +12,22 @@ const MobileNavigation = () => {
     <FontAwesomeIcon
       icon={faBars}
       onClick={() => setOpen(!open)}
+      className="menu-icon"
     ></FontAwesomeIcon>
   );
   const closeIcon = (
     <FontAwesomeIcon
       icon={faXmark}
       onClick={() => setOpen(!open)}
+      className="menu-icon"
     ></FontAwesomeIcon>
   );
 
   return (
-    <nav>
+    <nav className="flex lg:hidden text-xl">
+      
       {open ? closeIcon : hamburgerIcon} 
-      {open && <NavLinks isMobile={true} closeMobile={closeMobile} />}
+      {open && <NavLinks isMobile={true} closeMobile={closeMobile} className=""/>}
     </nav>
   );
 };

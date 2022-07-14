@@ -1,0 +1,20 @@
+@media only screen and (max-width: 1023px) {
+  ul {
+    position: absolute;
+    min-width: 350px;
+    left: 0%;
+    background: #eee;
+    /* border: 1px solid black; */
+    top: 13.25%
+  }
+
+  ul li{
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+  }
+
+  ul li:last-child{
+    border-bottom: 5px solid black;
+
+  }
+}

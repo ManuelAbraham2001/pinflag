@@ -1,0 +1,9 @@
+nav{
+    /* position: relative; */
+}
+
+.menu-icon{
+    position: absolute;
+    right: 30px;
+    top: 35px;
+}
