@@ -9,8 +9,9 @@ $grisMuyClaro: #F0F0F0;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import './components/header/header';
-@import './components/home/hero/hero';
-@import './components/home/servicios/servicios';
+@import './components/pages/home/hero/hero';
+@import './components/pages/home/servicios/servicios';
+@import './components/pages/planes/planes';
 
 *{
     box-sizing: border-box;

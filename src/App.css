@@ -124,6 +124,63 @@ input[type=range]::-webkit-progress-value {
   font-size: 24px;
 }
 
+.slider {
+  width: 1000px;
+}
+
+path {
+  color: #33CCCC;
+}
+
+.planes__intro h2 {
+  color: #173554;
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 600px;
+  text-align: center;
+}
+.planes__intro h2 span {
+  color: #33CCCC;
+}
+.planes__intro p {
+  max-width: 600px;
+  text-align: center;
+  font-size: 24px;
+  color: #173554;
+}
+
+.plan {
+  height: 600px;
+}
+.plan .plan__button a {
+  background-color: #173554;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.plan__info .plan__info__li {
+  gap: 10px;
+}
+.plan__info ul li {
+  margin: 25px 0;
+}
+
+.plan__precio h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  color: #33CCCC;
+}
+.plan__precio p {
+  font-size: 32px;
+  color: #173554;
+  font-weight: bold;
+}
+.plan__precio p span {
+  font-size: 64px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

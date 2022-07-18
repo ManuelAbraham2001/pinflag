@@ -1,0 +1,78 @@
+$azul: #173554;
+$celeste: #33CCCC;
+$gris: #CCCCCC;
+$grisClaro: #DDDDDD;
+$grisMuyClaro: #F0F0F0;
+
+.slider{
+    width: 1000px;
+}
+
+path{
+    color: $celeste;
+}
+
+.planes__intro{
+    h2{
+        color: $azul;
+        font-size: 48px;
+        font-weight: 700;
+        max-width: 600px;
+        text-align: center;
+
+        span{
+            color: $celeste;
+        }
+    }
+
+    p{
+        max-width: 600px;
+        text-align: center;
+        font-size: 24px;
+        color: $azul;
+    }
+}
+
+.plan{
+    height: 600px;
+
+    .plan__button{
+        a{
+            background-color: $azul;
+            padding: 10px 50px;
+            border-radius: 5px;
+            color: #fff;
+        }
+    }
+}
+
+.plan__info{
+
+    .plan__info__li{
+        gap: 10px;
+    }
+
+    ul{
+        li{
+            margin: 25px 0;
+        }
+    }
+}
+
+.plan__precio{
+    h2{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 72px;
+        color: $celeste;
+    }
+
+    p{
+        font-size: 32px;
+        color: $azul;
+        font-weight: bold;
+        span{
+            font-size: 64px;
+        }
+    }
+}
