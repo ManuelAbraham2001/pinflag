@@ -1,0 +1,814 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.header {
+  padding: 20px 30px;
+}
+
+.header_btn a {
+  background-color: #33CCCC;
+  color: #fff;
+  padding: 13px 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hero_title {
+  min-height: 430px;
+}
+.hero_title h1 {
+  max-width: 800px;
+  font-size: 75px;
+  font-weight: bold;
+  color: #173554;
+  line-height: 90px;
+}
+.hero_title h1 span {
+  color: #33CCCC;
+}
+.hero_title p {
+  color: #173554;
+  max-width: 750px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+}
+.hero_title a {
+  color: #173554;
+  font-weight: 600;
+  border: 2px solid #173554;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.hero {
+  padding: 100px;
+}
+
+.carrousel_container {
+  margin: 200px 0;
+}
+
+.carrousel_contaier_title h2 {
+  color: #173554;
+  font-size: 55px;
+  line-height: 82px;
+  font-weight: bold;
+  text-align: center;
+}
+.carrousel_contaier_title h2 span {
+  color: #33CCCC;
+}
+.carrousel_contaier_title p {
+  color: #173554;
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 52px;
+}
+
+.carrousel_progress {
+  margin: 50px 0;
+}
+.carrousel_progress .step span {
+  width: 25px;
+  border-radius: 50%;
+  background-color: #E2E2E2;
+}
+
+.slider-home {
+  padding: 50px;
+}
+
+.line {
+  width: 10px;
+  height: 2px;
+  background-color: #E2E2E2;
+  border-radius: 50%;
+}
+
+.short_line {
+  width: 5px;
+  height: 2px;
+  background-color: #E2E2E2;
+  border-radius: 50%;
+}
+
+.slider_arrow {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #685CEB;
+}
+
+.slider_content h2 {
+  max-width: 600px;
+}
+
+button:disabled {
+  display: none;
+}
+
+.test {
+  margin: 0 auto;
+  gap: 20px;
+}
+.test h2 {
+  max-width: 600px;
+  font-weight: 500;
+  color: #173554;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.pedidos_usuarios {
+  height: 500px;
+  background-color: #685CEB;
+  color: #fff;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 78px;
+}
+.pedidos_usuarios h2 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.pedidos_usuarios .number_counter {
+  display: inline-block;
+  color: #000;
+  background-color: #fff;
+  width: 65px;
+  height: 65px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+.pedidos_usuarios .number_counter span {
+  position: relative;
+  bottom: 6%;
+  font-weight: 400;
+}
+
+.clientes {
+  margin: 200px 0;
+}
+
+.opiniones {
+  margin: 300px 0;
+}
+
+.opiniones_title {
+  margin-bottom: 200px;
+}
+
+.clientes_title h2, .opiniones_title h2 {
+  color: #173554;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 87px;
+}
+.clientes_title h2 span, .opiniones_title h2 span {
+  color: #33CCCC;
+}
+
+.clientes_beneficios_card {
+  border: 3px dashed #A2AEBB;
+  border-radius: 20px;
+  margin: 0 30px;
+  color: #173554;
+  height: 600px;
+  width: 400px;
+}
+.clientes_beneficios_card img {
+  width: 300px;
+  position: relative;
+  bottom: 30px;
+}
+.clientes_beneficios_card span {
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 138px;
+}
+.clientes_beneficios_card p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.opiniones_card_container {
+  margin: 100px 0;
+  position: relative;
+}
+
+.opiniones_card {
+  margin: 0 40px;
+  border: 3px solid;
+  width: 480px;
+  height: 890px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  border-radius: 30px;
+}
+.opiniones_card .user_info {
+  text-align: center;
+  gap: 30px;
+}
+.opiniones_card:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  border-color: #33CCCC;
+}
+.opiniones_card .user_picture img {
+  border-radius: 50%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: -90px;
+}
+.opiniones_card span {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: center;
+}
+.opiniones_card .user_info_content h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  max-width: 150px;
+  position: relative;
+  bottom: 40px;
+}
+
+.slider_container {
+  margin: 150px 0;
+}
+
+.slider {
+  width: 1000px;
+}
+
+path {
+  color: #33CCCC;
+}
+
+.planes__intro {
+  padding: 50px;
+}
+.planes__intro h2 {
+  color: #173554;
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 700px;
+  text-align: center;
+}
+.planes__intro h2 span {
+  color: #33CCCC;
+}
+.planes__intro p {
+  max-width: 620px;
+  text-align: center;
+  font-size: 24px;
+  color: #173554;
+}
+
+.plan {
+  height: 600px;
+}
+.plan .plan__button a {
+  background-color: #685CEB;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.plan__info .plan__info__li {
+  gap: 10px;
+}
+.plan__info ul li {
+  margin: 25px 0;
+  max-width: 350px;
+}
+
+.planes__container {
+  margin-bottom: 150px;
+}
+
+.plan__precio h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  color: #33CCCC;
+}
+.plan__precio p {
+  font-size: 32px;
+  color: #173554;
+  font-weight: bold;
+}
+.plan__precio p span {
+  font-size: 64px;
+}
+
+.partners_hero {
+  position: relative;
+  padding: 20px;
+}
+.partners_hero .partners_hero_content {
+  height: 500px;
+}
+.partners_hero .partners_hero_content .partners_title {
+  max-width: 640px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #173554;
+}
+.partners_hero .partners_hero_content .partners_title span {
+  color: #33CCCC;
+}
+.partners_hero .partners_hero_content .partners_p {
+  max-width: 640px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+}
+.partners_hero .partners_hero_content .bar {
+  height: 10px;
+  background-color: yellow;
+  width: 600px;
+}
+
+.beneficios {
+  padding: 50px;
+}
+.beneficios .bar {
+  width: 10px;
+  height: 1000px;
+  background-color: yellow;
+}
+.beneficios .beneficios_title {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 82px;
+  color: #173554;
+  margin: 50px 0;
+}
+
+.beneficios_card {
+  color: #173554;
+}
+.beneficios_card h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  max-width: 430px;
+}
+.beneficios_card p {
+  max-width: 590px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  margin: 30px 0;
+}
+
+.beneficios_card2 {
+  color: #173554;
+  max-width: 590px;
+}
+.beneficios_card2 h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.beneficios_card2 p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  margin: 30px 0;
+}
+
+.partners_logos {
+  padding: 50px;
+}
+.partners_logos .partners_logo_title {
+  font-size: 48px;
+  color: #173554;
+  line-height: 72px;
+  margin: 80px 0;
+}
+.partners_logos .partners_logo_title span {
+  color: #33CCCC;
+}
+
+.logos {
+  gap: 50px;
+}
+
+.filtros ul li {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #173554;
+  margin: 20px 0;
+  outline: none;
+}
+
+.more_title {
+  color: #173554;
+  margin: 100px 0;
+}
+.more_title h1 {
+  font-size: 60px;
+  line-height: 90px;
+  margin-bottom: 50px;
+}
+.more_title p {
+  max-width: 1120px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 52.5px;
+}
+
+.beneficios_clientes_titulo {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.beneficios_clientes_card {
+  background-color: #33CCCC;
+  color: #fff;
+  width: 1200px;
+  margin: 30px 0;
+  border-radius: 25px;
+  height: 122px;
+  position: relative;
+}
+.beneficios_clientes_card p {
+  font-weight: 400;
+  max-width: 950px;
+  font-size: 30px;
+  line-height: 45px;
+}
+.beneficios_clientes_card .icon_test {
+  width: 43px;
+  height: 43px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+}
+
+.comenzar_cliente_titulo {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.comenzar_cliente_container {
+  margin: 150px 0;
+}
+
+.comenzar_cliente_content {
+  max-width: 740px;
+  min-height: auto;
+}
+.comenzar_cliente_content h2 {
+  font-weight: 600;
+  color: #173554;
+  font-size: 50px;
+  line-height: 75px;
+}
+.comenzar_cliente_content p {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 52px;
+}
+.comenzar_cliente_content a {
+  border-radius: 30px;
+  font-size: 30px;
+  padding: 10px 100px;
+  background-color: #33CCCC;
+  color: #fff;
+  font-weight: 600;
+}
+
+.img_hover :hover {
+  cursor: pointer;
+}
+
+.comenzar_tienda {
+  margin: 100px 0;
+}
+.comenzar_tienda p {
+  max-width: 730px;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 53px;
+}
+
+.footer_conteiner {
+  background-color: #173554;
+  color: #fff;
+  padding: 50px;
+}
+.footer_conteiner img {
+  width: 160px;
+}
+.footer_conteiner h2 {
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 38px;
+}
+.footer_conteiner span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+.footer_conteiner .footer_content {
+  gap: 30px;
+}
+
+.social {
+  gap: 30px;
+}
+
+.logotest {
+  width: 52px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.prefooter_title {
+  margin: 100px 0;
+}
+.prefooter_title h2 {
+  color: #173554;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 87px;
+}
+.prefooter_title h2 span {
+  color: #33CCCC;
+}
+
+.paso_paso {
+  margin: 200px 0;
+}
+
+.paso_paso_img span {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  margin-top: 10px;
+}
+
+.step_nav {
+  margin-top: 100px;
+  width: 90%;
+  padding: 25px;
+  border: 3px dashed #A2AEBB;
+  border-radius: 40px;
+}
+.step_nav :first-child {
+  background-color: #33CCCC;
+  color: #fff;
+}
+.step_nav button {
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.step_nav :focus {
+  background-color: #33CCCC;
+  color: #fff;
+}
+
+.servicios_container {
+  margin: 100px 0;
+}
+
+.servicios_title h1 {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #173554;
+  max-width: 650px;
+}
+.servicios_title h1 span {
+  color: #33CCCC;
+}
+.servicios_title p {
+  max-width: 650px;
+}
+
+.puntos_pickup_header {
+  background-color: #685CEB;
+  height: 450px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.puntos_pickup_header h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #fff;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.bubbles_container {
+  position: relative;
+  bottom: 220px;
+  width: 85%;
+}
+
+.bubble {
+  width: 370px;
+  height: 370px;
+  background-color: #173554;
+  border-radius: 50%;
+  color: #fff;
+}
+.bubble h2 {
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 138px;
+}
+.bubble p {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 230px;
+  text-align: center;
+}
+
+.pickup_servicios_content {
+  margin: 200px 0;
+}
+.pickup_servicios_content h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  color: #173554;
+}
+.pickup_servicios_content h2 span {
+  color: #33CCCC;
+}
+.pickup_servicios_content p {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #173554;
+}
+.pickup_servicios_content p span {
+  font-weight: 700;
+}
+
+.pickup_servicios_img {
+  position: relative;
+}
+.pickup_servicios_img .camion {
+  position: absolute;
+  right: 0;
+  top: -110px;
+}
+
+.blog_title {
+  margin: 100px 0 100px 100px;
+}
+.blog_title h1 {
+  left: 120px;
+  color: #173554;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+}
+.blog_title h1 span {
+  color: #33CCCC;
+}
+
+.otrosBlogs_container {
+  margin: 300px 0;
+}
+
+.filtros_content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #173554;
+}
+
+.filtros_content_list {
+  max-width: 400px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.filtros_content_list button {
+  color: #173554;
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 30px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  border: 1px solid #173554;
+}
+.filtros_content_list button:focus {
+  color: #fff;
+  border: 1px solid #685CEB;
+  background-color: #685CEB;
+}
+
+.blog_hero_info {
+  max-width: 1100px;
+  color: #173554;
+}
+.blog_hero_info h2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 84px;
+}
+.blog_hero_info h3 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 39px;
+}
+.blog_hero_info p {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 39px;
+}
+.blog_hero_info a {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+}
+
+.otrosBlogs_card {
+  max-width: 460px;
+  color: #173554;
+}
+.otrosBlogs_card h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.otrosBlogs_card h3 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.otrosBlogs_card p {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 22px;
+}
+.otrosBlogs_card a {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.button_more {
+  background-color: #685CEB;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #fff;
+  position: relative;
+  bottom: 175px;
+}
+.button_more button {
+  font-size: 55px;
+}
+
+.otrosBlogs_title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #33CCCC;
+}
+
+.otrosBlogs_content {
+  margin: 50px 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=App.css.map */

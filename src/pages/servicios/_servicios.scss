@@ -1,0 +1,131 @@
+.step_nav{
+    margin-top: 100px;
+    width: 90%;
+    padding: 25px;
+    border: 3px dashed #A2AEBB;
+    border-radius: 40px;
+    :first-child{
+        background-color: #33CCCC;
+        color: #fff;
+    }
+
+    button{
+        padding: 10px 30px;
+        border-radius: 30px;
+    }
+
+    :focus{
+        background-color: #33CCCC;
+        color: #fff;
+    }
+
+
+}
+
+.servicios_container{
+    margin: 100px 0;
+}
+
+.servicios_title{
+    h1{
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 90px;
+        color: #173554;
+        max-width: 650px;
+
+        span{
+            color: #33CCCC;
+        }
+    }
+    p{
+        max-width: 650px;
+    }
+
+}
+
+.puntos_pickup_header{
+    background-color: #685CEB;
+    height: 450px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    
+    h2{
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 78px;
+        color: #fff;
+        max-width: 1100px;
+        text-align: center;
+    }
+}
+
+.bubbles_container{
+    position: relative;
+    bottom: 220px;
+    width: 85%;
+}
+
+.bubble{
+    width: 370px;
+    height: 370px;
+    background-color:#173554;
+    border-radius: 50%;
+    color: #fff;
+
+    h2{
+        font-size: 92px;
+        font-weight: 700;
+        line-height: 138px;
+    }
+
+    p{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 230px;
+        text-align: center;
+    }
+}
+
+.pickup_servicios_content{
+
+    margin: 200px 0;
+    
+    h2{
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        color:#173554;
+        
+
+        span{
+            color:#33CCCC;
+        }
+
+    }
+
+    p{
+        // max-width: 590px;
+        text-align: left;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        color: #173554;
+
+        span{
+            font-weight: 700;
+        }
+    }
+}
+
+.pickup_servicios_img{
+    position: relative;
+
+    .camion{
+        position: absolute;
+        right: 0;
+        top: -110px;
+    }
+}

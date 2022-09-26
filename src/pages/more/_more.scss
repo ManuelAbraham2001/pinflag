@@ -1,0 +1,114 @@
+.more_title{
+
+    color: #173554;
+    margin: 100px 0;
+
+    h1{
+        font-size: 60px;
+        line-height: 90px;
+        margin-bottom: 50px;
+    }
+
+    p{
+        max-width: 1120px;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 52.5px
+    }
+
+}
+
+.beneficios_clientes_titulo{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+}
+
+.beneficios_clientes_card{
+    background-color: #33CCCC;
+    color: #fff;
+    width: 1200px;
+    margin: 30px 0;
+    border-radius: 25px;
+    height: 122px;
+    position: relative;
+
+    p{
+        font-weight: 400;
+        max-width: 950px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .icon_test{
+        width: 43px;
+        height: 43px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 30px;
+    }
+}
+
+.comenzar_cliente_titulo{
+
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.comenzar_cliente_container{
+    margin: 150px 0;
+}
+
+
+.comenzar_cliente_content{
+
+    max-width: 740px;
+    min-height: auto;
+    
+
+    h2{
+        font-weight: 600;
+        color:#173554;
+        font-size: 50px;
+        line-height: 75px;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 52px;
+    }
+
+    a{
+        border-radius: 30px;
+        font-size: 30px;
+        padding: 10px 100px;
+        background-color: #33CCCC;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+
+
+
+.img_hover{
+    :hover{
+        cursor: pointer;
+    }
+}
+
+
+.comenzar_tienda{
+
+    margin: 100px 0;
+
+    p{
+        max-width: 730px;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 53px;
+    }
+}
+

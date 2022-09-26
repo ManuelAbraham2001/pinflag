@@ -1,0 +1,120 @@
+.partners_hero{
+    position: relative;
+    padding: 20px;
+    
+    .partners_hero_content{
+        height: 500px;
+        .partners_title{
+            max-width: 640px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 72px;
+            color: #173554;
+            span{
+                color:#33CCCC;
+            }
+        }
+        .partners_p{
+            max-width: 640px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 45px;
+        }
+        .bar{
+            height: 10px;
+            background-color: yellow;
+            width: 600px;
+        }
+    }
+}
+
+.beneficios{
+    padding: 50px;
+
+    .bar{
+        width: 10px;
+        height: 1000px;
+        background-color: yellow;
+    }
+
+    .beneficios_title{
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 82px;
+        color: #173554;
+        margin: 50px 0;
+    }
+}
+
+.beneficios_card{
+    color: #173554;
+    h2{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+        max-width: 430px;
+    }
+    p{
+        max-width: 590px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 37px;
+        margin: 30px 0;
+    }
+}
+
+.beneficios_card2{
+    color: #173554;
+    max-width: 590px;
+    h2{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 37px;
+        margin: 30px 0;
+    }
+}
+
+.partners_logos{
+    padding: 50px;
+
+    .partners_logo_title{
+        font-size: 48px;
+        color: #173554;
+        line-height: 72px;
+        margin: 80px 0;
+        span{
+            color: #33CCCC;
+        }
+    }
+}
+
+.logos{
+    gap: 50px;
+}
+
+.filtros{
+    ul{
+        li{
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            color: #173554;
+            margin: 20px 0;
+            outline: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

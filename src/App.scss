@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+@import './components/shared/header/header';
+@import './components/hero/hero';
+@import './components/slider/carrousel';
+@import './components/clientes_home/clientes_home';
+@import './pages/planes/planes';
+@import './pages/partners/partners';
+@import './pages/more/more';
+@import './components/shared/footer/footer.scss';
+@import './components/prefooter/prefooter';
+@import './pages/servicios/servicios';
+@import './pages/blog/blog';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
