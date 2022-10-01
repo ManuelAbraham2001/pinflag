@@ -1,3 +1,5 @@
+@import '../../utilities';
+
 .partners_hero{
     position: relative;
     padding: 20px;
@@ -9,9 +11,9 @@
             font-size: 48px;
             font-weight: 700;
             line-height: 72px;
-            color: #173554;
+            color: $azul;
             span{
-                color:#33CCCC;
+                color: $calipso;
             }
         }
         .partners_p{
@@ -22,13 +24,13 @@
         }
         .bar{
             height: 10px;
-            background-color: yellow;
+            background-color: $amarillo;
             width: 600px;
         }
     }
 }
 
-.beneficios{
+.benefits{
     padding: 50px;
 
     .bar{
@@ -37,17 +39,17 @@
         background-color: yellow;
     }
 
-    .beneficios_title{
+    .benefits_title{
         font-size: 55px;
         font-weight: 700;
         line-height: 82px;
-        color: #173554;
+        color: $azul;
         margin: 50px 0;
     }
 }
 
-.beneficios_card{
-    color: #173554;
+.benefits_card{
+    color: $azul;
     h2{
         font-size: 40px;
         font-weight: 600;
@@ -63,8 +65,8 @@
     }
 }
 
-.beneficios_card2{
-    color: #173554;
+.benefits_card2{
+    color: $azul;
     max-width: 590px;
     h2{
         font-size: 40px;
@@ -84,11 +86,11 @@
 
     .partners_logo_title{
         font-size: 48px;
-        color: #173554;
+        color: $azul;
         line-height: 72px;
         margin: 80px 0;
         span{
-            color: #33CCCC;
+            color: $calipso;
         }
     }
 }
@@ -97,13 +99,13 @@
     gap: 50px;
 }
 
-.filtros{
+.filters{
     ul{
         li{
             font-size: 24px;
             font-weight: 500;
             line-height: 36px;
-            color: #173554;
+            color: $azul;
             margin: 20px 0;
             outline: none;
         }

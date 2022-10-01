@@ -1,3 +1,5 @@
+@import '../../utilities';
+
 .step_nav{
     margin-top: 100px;
     width: 90%;
@@ -5,8 +7,8 @@
     border: 3px dashed #A2AEBB;
     border-radius: 40px;
     :first-child{
-        background-color: #33CCCC;
-        color: #fff;
+        background-color: $calipso;
+        color: $blanco;
     }
 
     button{
@@ -15,37 +17,41 @@
     }
 
     :focus{
-        background-color: #33CCCC;
-        color: #fff;
+        background-color: $calipso;
+        color: $blanco;
     }
 
 
 }
 
-.servicios_container{
-    margin: 100px 0;
+.services_container{
+    padding: 100px;
 }
 
-.servicios_title{
+.services_title{
     h1{
         font-size: 75px;
         font-weight: 700;
-        line-height: 90px;
-        color: #173554;
+        line-height: 103px;
+        color: $azul;
         max-width: 650px;
 
         span{
-            color: #33CCCC;
+            color: $calipso;
         }
     }
     p{
-        max-width: 650px;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        color: $azul;
+        max-width: 870px;
     }
 
 }
 
-.puntos_pickup_header{
-    background-color: #685CEB;
+.pickup_points_header{
+    background-color: $lila;
     height: 450px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -54,7 +60,7 @@
         font-size: 52px;
         font-weight: 700;
         line-height: 78px;
-        color: #fff;
+        color: $blanco;
         max-width: 1100px;
         text-align: center;
     }
@@ -69,9 +75,9 @@
 .bubble{
     width: 370px;
     height: 370px;
-    background-color:#173554;
+    background-color:$azul;
     border-radius: 50%;
-    color: #fff;
+    color: $blanco;
 
     h2{
         font-size: 92px;
@@ -88,7 +94,7 @@
     }
 }
 
-.pickup_servicios_content{
+.pickup_services_content{
 
     margin: 200px 0;
     
@@ -97,11 +103,11 @@
         font-weight: 700;
         line-height: 78px;
         text-align: left;
-        color:#173554;
+        color:$azul;
         
 
         span{
-            color:#33CCCC;
+            color:$calipso;
         }
 
     }
@@ -112,7 +118,7 @@
         font-size: 28px;
         font-weight: 400;
         line-height: 34px;
-        color: #173554;
+        color: $azul;
 
         span{
             font-weight: 700;
@@ -120,7 +126,7 @@
     }
 }
 
-.pickup_servicios_img{
+.pickup_services_img{
     position: relative;
 
     .camion{

@@ -1,6 +1,8 @@
+@import '../../utilities';
+
 .more_title{
 
-    color: #173554;
+    color: $azul;
     margin: 100px 0;
 
     h1{
@@ -18,15 +20,15 @@
 
 }
 
-.beneficios_clientes_titulo{
+.customer_benefits_title{
     font-weight: 700;
     font-size: 50px;
     line-height: 75px;
 }
 
-.beneficios_clientes_card{
-    background-color: #33CCCC;
-    color: #fff;
+.customer_benefits_card{
+    background-color: $calipso;
+    color: $blanco;
     width: 1200px;
     margin: 30px 0;
     border-radius: 25px;
@@ -43,26 +45,26 @@
     .icon_test{
         width: 43px;
         height: 43px;
-        background-color: #fff;
+        background-color: $blanco;
         border-radius: 50%;
         position: absolute;
         left: 30px;
     }
 }
 
-.comenzar_cliente_titulo{
+.start_customers_title{
 
     font-weight: bold;
     font-size: 50px;
 
 }
 
-.comenzar_cliente_container{
+.start_customers_container{
     margin: 150px 0;
 }
 
 
-.comenzar_cliente_content{
+.start_customers_content{
 
     max-width: 740px;
     min-height: auto;
@@ -70,7 +72,7 @@
 
     h2{
         font-weight: 600;
-        color:#173554;
+        color: $azul;
         font-size: 50px;
         line-height: 75px;
     }
@@ -85,8 +87,8 @@
         border-radius: 30px;
         font-size: 30px;
         padding: 10px 100px;
-        background-color: #33CCCC;
-        color: #fff;
+        background-color: $calipso;
+        color: $blanco;
         font-weight: 600;
     }
 }

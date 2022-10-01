@@ -1,24 +1,26 @@
+@import '../../utilities';
+
 .prefooter_title{
 
     margin: 100px 0;
 
     h2{
-        color: #173554;
+        color: $azul;
         font-weight: 700;
         font-size: 58px;
         line-height: 87px;
     
         span{
-            color: #33CCCC;
+            color: $calipso;
         }
     }
 }
 
-.paso_paso{
+.setp_by_step{
     margin: 200px 0;
 }
 
-.paso_paso_img{
+.setp_by_step_img{
     span{
         font-size: 26px;
         font-weight: 700;

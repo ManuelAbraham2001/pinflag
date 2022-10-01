@@ -1,7 +1,9 @@
-.pedidos_usuarios{
+@import '../../utilities';
+
+.orders_usuarios{
     height: 500px;
-    background-color: #685CEB;
-    color: #fff;
+    background-color: $lila;
+    color: $blanco;
     font-weight: 700;
     font-size: 52px;
     line-height: 78px;
@@ -11,8 +13,8 @@
     }
     .number_counter{
         display: inline-block;
-        color: #000;
-        background-color: #fff;
+        color: $negro;
+        background-color: $blanco;
         width: 65px;
         height: 65px;
         margin: 0 10px;
@@ -27,38 +29,38 @@
     }
 }
 
-.clientes{
+.customers{
     margin: 200px 0;
 }
 
-.opiniones{
+.opinions{
     margin: 300px 0;
 }
 
-.opiniones_title{
+.opinions_title{
     margin-bottom: 200px;
 }
 
-.clientes_title, .opiniones_title{
+.customers_title, .opinions_title{
     h2{
-        color: #173554;
+        color: $azul;
         font-weight: 700;
         font-size: 58px;
         line-height: 87px;
 
         span{
-            color: #33CCCC;
+            color: $calipso;
         }
     }
 
 }
 
-.clientes_beneficios_card{
+.customers_benefits_card{
 
     border: 3px dashed #A2AEBB;
     border-radius: 20px;
     margin: 0 30px;
-    color:#173554;
+    color:$azul;
     height: 600px;
     width: 400px;
 
@@ -81,12 +83,12 @@
     }
 }
 
-.opiniones_card_container{
+.opinions_card_container{
     margin: 100px 0;
     position: relative;
 }
 
-.opiniones_card{
+.opinions_card{
     margin: 0 40px;
     border: 3px solid;
     width: 480px;
@@ -104,7 +106,7 @@
     &:hover{
         -webkit-filter: grayscale(0);
         filter: grayscale(0);
-        border-color: #33CCCC;
+        border-color: $calipso;
     }
 
 

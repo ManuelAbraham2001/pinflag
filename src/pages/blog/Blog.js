@@ -9,11 +9,11 @@ const Blog = () => {
             <h1>¡Lorem <span>Ipsum!</span></h1>
         </div>
         <div className="blog_news flex items-start justify-around">
-            <div className="filtros">
-                <div className="filtros_content flex flex-col items-start justify-center gap-8">
-                    <div className="filtros_list flex flex-col items-start justify-center gap-8">
+            <div className="filter">
+                <div className="filter_content flex flex-col items-start justify-center gap-8">
+                    <div className="filter_list flex flex-col items-start justify-center gap-8">
                         <h2>Ver por categoria</h2>
-                        <div className="filtros_content_list flex">
+                        <div className="filter_content_list flex">
                             <button autoFocus>Ver todo</button>
                             <button>Sustentabilidad</button>
                             <button>Ventas</button>
@@ -21,9 +21,9 @@ const Blog = () => {
                             <button>Marketing</button>
                         </div>
                     </div>
-                    <div className="filtros_list flex flex-col items-start justify-center gap-8">
+                    <div className="filter_list flex flex-col items-start justify-center gap-8">
                         <h2>Ver por autor</h2>
-                        <div className="filtros_content_list flex">
+                        <div className="filter_content_list flex">
                             <button autoFocus>Selected</button>
                             <button>Bob Esponga</button>
                             <button>Patricio</button>

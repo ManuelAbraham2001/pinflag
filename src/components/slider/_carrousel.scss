@@ -1,3 +1,5 @@
+@import '../../utilities';
+
 .carrousel_container{
     margin: 200px 0;
 }
@@ -5,18 +7,18 @@
 .carrousel_contaier_title{
     
     h2{
-        color:#173554; 
+        color:$azul; 
         font-size: 55px;
         line-height: 82px;
         font-weight: bold;
         text-align: center;
         span{
-            color:#33CCCC;
+            color:$calipso;
         }
     }
 
     p{
-        color: #173554;
+        color: $azul;
         text-align: center;
         font-weight: 500;
         font-size: 35px;
@@ -59,7 +61,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #685CEB;
+    background-color: $lila;
 }
 
 .slider_content{
@@ -78,7 +80,7 @@ button:disabled{
     h2{
         max-width: 600px;
         font-weight: 500;
-        color:#173554;
+        color:$azul;
         font-size: 40px;
         line-height: 60px;
     }

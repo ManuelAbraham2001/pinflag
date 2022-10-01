@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -124,7 +146,7 @@ button:disabled {
   line-height: 60px;
 }
 
-.pedidos_usuarios {
+.orders_usuarios {
   height: 500px;
   background-color: #685CEB;
   color: #fff;
@@ -132,48 +154,48 @@ button:disabled {
   font-size: 52px;
   line-height: 78px;
 }
-.pedidos_usuarios h2 {
+.orders_usuarios h2 {
   max-width: 90%;
   margin: 0 auto;
 }
-.pedidos_usuarios .number_counter {
+.orders_usuarios .number_counter {
   display: inline-block;
-  color: #000;
+  color: #000000;
   background-color: #fff;
   width: 65px;
   height: 65px;
   margin: 0 10px;
   border-radius: 10px;
 }
-.pedidos_usuarios .number_counter span {
+.orders_usuarios .number_counter span {
   position: relative;
   bottom: 6%;
   font-weight: 400;
 }
 
-.clientes {
+.customers {
   margin: 200px 0;
 }
 
-.opiniones {
+.opinions {
   margin: 300px 0;
 }
 
-.opiniones_title {
+.opinions_title {
   margin-bottom: 200px;
 }
 
-.clientes_title h2, .opiniones_title h2 {
+.customers_title h2, .opinions_title h2 {
   color: #173554;
   font-weight: 700;
   font-size: 58px;
   line-height: 87px;
 }
-.clientes_title h2 span, .opiniones_title h2 span {
+.customers_title h2 span, .opinions_title h2 span {
   color: #33CCCC;
 }
 
-.clientes_beneficios_card {
+.customers_benefits_card {
   border: 3px dashed #A2AEBB;
   border-radius: 20px;
   margin: 0 30px;
@@ -181,28 +203,28 @@ button:disabled {
   height: 600px;
   width: 400px;
 }
-.clientes_beneficios_card img {
+.customers_benefits_card img {
   width: 300px;
   position: relative;
   bottom: 30px;
 }
-.clientes_beneficios_card span {
+.customers_benefits_card span {
   font-size: 92px;
   font-weight: 700;
   line-height: 138px;
 }
-.clientes_beneficios_card p {
+.customers_benefits_card p {
   font-weight: 400;
   font-size: 22px;
   line-height: 27px;
 }
 
-.opiniones_card_container {
+.opinions_card_container {
   margin: 100px 0;
   position: relative;
 }
 
-.opiniones_card {
+.opinions_card {
   margin: 0 40px;
   border: 3px solid;
   width: 480px;
@@ -211,16 +233,16 @@ button:disabled {
   filter: grayscale(1);
   border-radius: 30px;
 }
-.opiniones_card .user_info {
+.opinions_card .user_info {
   text-align: center;
   gap: 30px;
 }
-.opiniones_card:hover {
+.opinions_card:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   border-color: #33CCCC;
 }
-.opiniones_card .user_picture img {
+.opinions_card .user_picture img {
   border-radius: 50%;
   position: absolute;
   margin-left: auto;
@@ -230,13 +252,13 @@ button:disabled {
   text-align: center;
   top: -90px;
 }
-.opiniones_card span {
+.opinions_card span {
   font-size: 26px;
   font-weight: 600;
   line-height: 31px;
   text-align: center;
 }
-.opiniones_card .user_info_content h3 {
+.opinions_card .user_info_content h3 {
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
@@ -246,7 +268,7 @@ button:disabled {
 }
 
 .slider_container {
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
 .slider {
@@ -257,61 +279,71 @@ path {
   color: #33CCCC;
 }
 
-.planes__intro {
+.plans__intro {
   padding: 50px;
 }
-.planes__intro h2 {
+.plans__intro h2 {
   color: #173554;
   font-size: 48px;
   font-weight: 700;
   max-width: 700px;
   text-align: center;
 }
-.planes__intro h2 span {
+.plans__intro h2 span {
   color: #33CCCC;
 }
-.planes__intro p {
+.plans__intro p {
   max-width: 620px;
   text-align: center;
   font-size: 24px;
   color: #173554;
 }
 
-.plan {
-  height: 600px;
-}
-.plan .plan__button a {
-  background-color: #685CEB;
-  padding: 10px 50px;
-  border-radius: 5px;
-  color: #fff;
+.plan_container {
+  height: 1000px;
+  width: 540px;
+  background-color: #F3F3F3;
+  padding: 50px;
+  border-radius: 20px;
 }
 
-.plan__info .plan__info__li {
-  gap: 10px;
+.plan_price {
+  height: 200px;
 }
-.plan__info ul li {
-  margin: 25px 0;
-  max-width: 350px;
-}
-
-.planes__container {
-  margin-bottom: 150px;
-}
-
-.plan__precio h2 {
-  font-weight: bold;
+.plan_price h2 {
   font-size: 48px;
-  line-height: 72px;
+  font-weight: 700;
   color: #33CCCC;
 }
-.plan__precio p {
+.plan_price p {
   font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
   color: #173554;
-  font-weight: bold;
 }
-.plan__precio p span {
+.plan_price p span {
   font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.plan__button a {
+  background-color: #685CEB;
+  padding: 15px 100px;
+  border-radius: 40px;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.plan_ul ul li {
+  max-width: 420px;
+}
+.plan_ul ul li p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
 }
 
 .partners_hero {
@@ -339,19 +371,19 @@ path {
 }
 .partners_hero .partners_hero_content .bar {
   height: 10px;
-  background-color: yellow;
+  background-color: #E4ED1C;
   width: 600px;
 }
 
-.beneficios {
+.benefits {
   padding: 50px;
 }
-.beneficios .bar {
+.benefits .bar {
   width: 10px;
   height: 1000px;
   background-color: yellow;
 }
-.beneficios .beneficios_title {
+.benefits .benefits_title {
   font-size: 55px;
   font-weight: 700;
   line-height: 82px;
@@ -359,16 +391,16 @@ path {
   margin: 50px 0;
 }
 
-.beneficios_card {
+.benefits_card {
   color: #173554;
 }
-.beneficios_card h2 {
+.benefits_card h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 60px;
   max-width: 430px;
 }
-.beneficios_card p {
+.benefits_card p {
   max-width: 590px;
   font-weight: 500;
   font-size: 25px;
@@ -376,16 +408,16 @@ path {
   margin: 30px 0;
 }
 
-.beneficios_card2 {
+.benefits_card2 {
   color: #173554;
   max-width: 590px;
 }
-.beneficios_card2 h2 {
+.benefits_card2 h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 60px;
 }
-.beneficios_card2 p {
+.benefits_card2 p {
   font-weight: 500;
   font-size: 25px;
   line-height: 37px;
@@ -409,7 +441,7 @@ path {
   gap: 50px;
 }
 
-.filtros ul li {
+.filters ul li {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -434,13 +466,13 @@ path {
   line-height: 52.5px;
 }
 
-.beneficios_clientes_titulo {
+.customer_benefits_title {
   font-weight: 700;
   font-size: 50px;
   line-height: 75px;
 }
 
-.beneficios_clientes_card {
+.customer_benefits_card {
   background-color: #33CCCC;
   color: #fff;
   width: 1200px;
@@ -449,13 +481,13 @@ path {
   height: 122px;
   position: relative;
 }
-.beneficios_clientes_card p {
+.customer_benefits_card p {
   font-weight: 400;
   max-width: 950px;
   font-size: 30px;
   line-height: 45px;
 }
-.beneficios_clientes_card .icon_test {
+.customer_benefits_card .icon_test {
   width: 43px;
   height: 43px;
   background-color: #fff;
@@ -464,31 +496,31 @@ path {
   left: 30px;
 }
 
-.comenzar_cliente_titulo {
+.start_customers_title {
   font-weight: bold;
   font-size: 50px;
 }
 
-.comenzar_cliente_container {
+.start_customers_container {
   margin: 150px 0;
 }
 
-.comenzar_cliente_content {
+.start_customers_content {
   max-width: 740px;
   min-height: auto;
 }
-.comenzar_cliente_content h2 {
+.start_customers_content h2 {
   font-weight: 600;
   color: #173554;
   font-size: 50px;
   line-height: 75px;
 }
-.comenzar_cliente_content p {
+.start_customers_content p {
   font-weight: 500;
   font-size: 35px;
   line-height: 52px;
 }
-.comenzar_cliente_content a {
+.start_customers_content a {
   border-radius: 30px;
   font-size: 30px;
   padding: 10px 100px;
@@ -557,11 +589,11 @@ path {
   color: #33CCCC;
 }
 
-.paso_paso {
+.setp_by_step {
   margin: 200px 0;
 }
 
-.paso_paso_img span {
+.setp_by_step_img span {
   font-size: 26px;
   font-weight: 700;
   line-height: 31px;
@@ -588,31 +620,35 @@ path {
   color: #fff;
 }
 
-.servicios_container {
-  margin: 100px 0;
+.services_container {
+  padding: 100px;
 }
 
-.servicios_title h1 {
+.services_title h1 {
   font-size: 75px;
   font-weight: 700;
-  line-height: 90px;
+  line-height: 103px;
   color: #173554;
   max-width: 650px;
 }
-.servicios_title h1 span {
+.services_title h1 span {
   color: #33CCCC;
 }
-.servicios_title p {
-  max-width: 650px;
+.services_title p {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #173554;
+  max-width: 870px;
 }
 
-.puntos_pickup_header {
+.pickup_points_header {
   background-color: #685CEB;
   height: 450px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
 }
-.puntos_pickup_header h2 {
+.pickup_points_header h2 {
   font-size: 52px;
   font-weight: 700;
   line-height: 78px;
@@ -647,34 +683,34 @@ path {
   text-align: center;
 }
 
-.pickup_servicios_content {
+.pickup_services_content {
   margin: 200px 0;
 }
-.pickup_servicios_content h2 {
+.pickup_services_content h2 {
   font-size: 52px;
   font-weight: 700;
   line-height: 78px;
   text-align: left;
   color: #173554;
 }
-.pickup_servicios_content h2 span {
+.pickup_services_content h2 span {
   color: #33CCCC;
 }
-.pickup_servicios_content p {
+.pickup_services_content p {
   text-align: left;
   font-size: 28px;
   font-weight: 400;
   line-height: 34px;
   color: #173554;
 }
-.pickup_servicios_content p span {
+.pickup_services_content p span {
   font-weight: 700;
 }
 
-.pickup_servicios_img {
+.pickup_services_img {
   position: relative;
 }
-.pickup_servicios_img .camion {
+.pickup_services_img .camion {
   position: absolute;
   right: 0;
   top: -110px;
@@ -698,7 +734,7 @@ path {
   margin: 300px 0;
 }
 
-.filtros_content h2 {
+.filter_content h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
@@ -706,12 +742,12 @@ path {
   color: #173554;
 }
 
-.filtros_content_list {
+.filter_content_list {
   max-width: 400px;
   flex-wrap: wrap;
   gap: 20px;
 }
-.filtros_content_list button {
+.filter_content_list button {
   color: #173554;
   padding: 8px 16px;
   width: fit-content;
@@ -722,7 +758,7 @@ path {
   line-height: 19px;
   border: 1px solid #173554;
 }
-.filtros_content_list button:focus {
+.filter_content_list button:focus {
   color: #fff;
   border: 1px solid #685CEB;
   background-color: #685CEB;

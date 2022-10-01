@@ -1,11 +1,7 @@
-$azul: #173554;
-$celeste: #33CCCC;
-$gris: #CCCCCC;
-$grisClaro: #DDDDDD;
-$grisMuyClaro: #F0F0F0;
+@import '../../utilities';
 
 .slider_container{
-    margin: 150px 0;
+    margin: 100px 0;
 }
 
 .slider{
@@ -13,13 +9,11 @@ $grisMuyClaro: #F0F0F0;
     
 }
 
-
-
 path{
-    color: $celeste;
+    color: $calipso;
 }
 
-.planes__intro{
+.plans__intro{
     padding: 50px;
     h2{
         color: $azul;
@@ -29,7 +23,7 @@ path{
         text-align: center;
 
         span{
-            color: $celeste;
+            color: $calipso;
         }
     }
 
@@ -41,51 +35,61 @@ path{
     }
 }
 
-.plan{
-    height: 600px;
 
-    .plan__button{
-        a{
-            background-color: #685CEB;
-            padding: 10px 50px;
-            border-radius: 5px;
-            color: #fff;
-        }
-    }
+.plan_container{
+    height: 1000px;
+    width: 540px;
+    background-color: #F3F3F3;
+    padding: 50px;
+    border-radius: 20px;
 }
 
-.plan__info{
+.plan_price{
 
-    .plan__info__li{
-        gap: 10px;
-    }
+    height: 200px;
 
-    ul{
-        li{
-            margin: 25px 0;
-            max-width: 350px;
-        }
-    }
-}
-
-.planes__container{
-    margin-bottom: 150px;
-}
-
-.plan__precio{
     h2{
-        font-weight: bold;
         font-size: 48px;
-        line-height: 72px;
-        color: $celeste;
+        font-weight: 700;
+        color: $calipso;
     }
 
     p{
         font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
         color: $azul;
-        font-weight: bold;
+
         span{
             font-size: 64px;
+            font-weight: 700;
+            line-height: 96px;
+        }   
+
+    }
+}
+
+.plan__button{
+    a{
+        background-color: $lila;
+        padding: 15px 100px;
+        border-radius: 40px;
+        color: $blanco;
+        border-radius: 20px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.plan_ul{
+    ul{
+        li{
+            max-width: 420px;
+            p{
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 36px;
+            }
         }
     }
 }

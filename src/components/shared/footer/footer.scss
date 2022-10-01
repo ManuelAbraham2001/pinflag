@@ -1,6 +1,8 @@
+@import '../../../utilities';
+
 .footer_conteiner{
-    background-color: #173554;
-    color: #fff;
+    background-color: $azul;
+    color: $blanco;
     padding: 50px;
 
     img{
@@ -32,6 +34,6 @@
 .logotest{
     width: 52px;
     height: 52px;
-    background-color: #fff;
+    background-color: $blanco;
     border-radius: 50%;
 }

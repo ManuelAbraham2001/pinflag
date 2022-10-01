@@ -47,33 +47,33 @@ const Mores = () => {
             <p className='text-center'>Con Pinflag tendrás tus boletas, tus productos y tus envíos en la palma de tu mano.</p>
             <p className='text-center'>Olvidate de buscar mails de tus pedidos de distintas marcas e ingresar a varios sitios de internet o incluso de llamar a números telefónicos.</p>
         </div>
-        <div className="beneficios_clientes flex flex-col items-center justify-center">
-            <div className="beneficios_clientes_titulo">
+        <div className="customer_benefits flex flex-col items-center justify-center">
+            <div className="customer_benefits_titulo">
                 <h2>Conoce tus beneficios</h2>
             </div>
-            <div className="beneficios_clientes_card flex items-center justify-center">
+            <div className="customer_benefits_card flex items-center justify-center">
                 <span className='icon_test'></span>
                 <p className='text-center'>Información centralizada. Ten Toda la información de tus compras en tu App Pinflag</p>
             </div>
-            <div className="beneficios_clientes_card flex items-center justify-center">
+            <div className="customer_benefits_card flex items-center justify-center">
                 <span className='icon_test'></span>
                 <p>Retirá tus pedidos en tu casa, o en lugares cercanos.</p>
             </div>
-            <div className="beneficios_clientes_card flex items-center justify-center">
+            <div className="customer_benefits_card flex items-center justify-center">
                 <span className='icon_test'></span>
                 <p>Seguridad de que tu pedido está en camino a ser entregado.</p>
             </div>
-            <div className="beneficios_clientes_card flex items-center justify-center">
+            <div className="customer_benefits_card flex items-center justify-center">
                 <span className='icon_test'></span>
                 <p>Ten tu boleta y la dirección de entrega en tu App</p>
             </div>
         </div>
-        <div className="comenzar_cliente flex flex-col items-center justify-center">
-            <div className="comenzar_cliente_titulo">
+        <div className="start_customers flex flex-col items-center justify-center">
+            <div className="start_customers_titulo">
                 <h2 className='my-32'>¿Cómo comenzar?</h2>
             </div>
-            <div className="comenzar_cliente_container flex items-center justify-evenly w-full">
-                <div className="comenzar_cliente_content">
+            <div className="start_customers_container flex items-center justify-evenly w-full">
+                <div className="start_customers_content">
                     <h2>Compra en nuestras marcas adheridas</h2>
                     <p className='my-8'>{text}</p>
                     <a href="#">VER MAS</a>
@@ -83,39 +83,39 @@ const Mores = () => {
                 </div>
             </div>
 
-            <div className="comenzar_cliente_container flex items-center justify-evenly w-full">
+            <div className="start_customers_container flex items-center justify-evenly w-full">
                 <img src={more1} alt=""/>
-                <div className="comenzar_cliente_content flex flex-col items-start justify-center gap-10">
+                <div className="start_customers_content flex flex-col items-start justify-center gap-10">
                     <h2>Elige si quieres retirar en puntos Pinflag o envío a otra dirección</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="#">CONOCER TIENDAS</a>
                 </div>
             </div>
             
-            <div className="comenzar_cliente_container flex items-center justify-around w-full">
-                <div className="comenzar_cliente_content flex flex-col items-start justify-center gap-12">
+            <div className="start_customers_container flex items-center justify-around w-full">
+                <div className="start_customers_content flex flex-col items-start justify-center gap-12">
                     <h2>Descarga la app</h2>
-                    <div className="comenzar_cliente_content_img flex gap-8">
+                    <div className="start_customers_content_img flex gap-8">
                         <img src={playstore} alt="" />
                         <img src={appstore} alt="" />
                     </div>
                 </div>
-                <div className="comenzar_cliente_content">
+                <div className="start_customers_content">
                     <img src={mobileapp} alt="" />
                 </div>
             </div>
 
-            <div className="comenzar_cliente_container flex items-center justify-evenly w-full">
+            <div className="start_customers_container flex items-center justify-evenly w-full">
                 <img src={mobileapp} alt=""/>
-                <div className="comenzar_cliente_content flex flex-col items-start justify-center gap-10">
+                <div className="start_customers_content flex flex-col items-start justify-center gap-10">
                     <h2>Sigue tu pedido</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <a href="#">SABER MAS</a>
                 </div>
             </div>
 
-            <div className="comenzar_cliente_container flex items-center justify-evenly w-full">
-                <div className="comenzar_cliente_content flex flex-col items-start justify-center gap-10">
+            <div className="start_customers_container flex items-center justify-evenly w-full">
+                <div className="start_customers_content flex flex-col items-start justify-center gap-10">
                     <h2>Retira tu pedido</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>

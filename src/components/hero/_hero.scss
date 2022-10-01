@@ -1,3 +1,4 @@
+@import '../../utilities';
 
 .hero_title{
 
@@ -7,16 +8,16 @@
         max-width: 800px;
         font-size: 75px;
         font-weight: bold;
-        color: #173554;
+        color: $azul;
         line-height: 90px;
 
         span{
-            color: #33CCCC;
+            color: $calipso;
         }
     }
 
     p{
-        color: #173554;
+        color: $azul;
         max-width: 750px;
         font-weight: 400;
         font-size: 28px;
@@ -24,9 +25,9 @@
     }
 
     a{
-        color: #173554;
+        color: $azul;
         font-weight: 600;  
-        border: 2px solid #173554;
+        border: 2px solid $azul;
         width: fit-content;
         border-radius: 20px;
         padding: 10px 20px;
