@@ -28,3 +28,15 @@
         margin-top: 10px;
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .setp_by_step{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        .setp_by_step_img{
+            margin: 20px 0;
+        }
+    }
+}

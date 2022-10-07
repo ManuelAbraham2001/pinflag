@@ -10,7 +10,7 @@ const Header = () => {
                 <img src={logo} alt="logo" />
             </div>
             <div className="header_nav">
-            <ul className='flex inline'>
+            <ul className='header_nav_ul flex'>
                 <li className='mx-6 font-bold'>
                     <Link to={'/'} className='font-bold'>Inicio</Link>
                 </li>

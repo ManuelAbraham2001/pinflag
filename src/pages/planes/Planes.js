@@ -49,7 +49,7 @@ const Planes = () => {
     <div>
       <div className="plans flex flex-col justify-center items-center">
         <div className="plans__intro flex flex-col justify-center items-center">
-          <h2>plans de precios flexibles para <span>tu empresa</span></h2>
+          <h2>Planes de precios flexibles para <span>tu empresa</span></h2>
           <p>Prueba gratis Pinflag durante 30 pedidos y 30 días</p>
         </div>
         <div className="slider_container flex flex-col">

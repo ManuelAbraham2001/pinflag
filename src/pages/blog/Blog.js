@@ -48,7 +48,7 @@ const Blog = () => {
                 <div className="otrosBlogs_title">
                     <h2>Recomendados</h2>
                 </div>
-                <div className='flex items-center justify-around gap-16'>
+                <div className='blogs_cards_container flex items-center justify-around gap-16'>
                     <div className="otrosBlogs_card flex flex-col gap-8">
                         <img src={rectangulo} alt="" />
                         <div className="otrosBlogs_card flex flex-col gap-8">
@@ -85,7 +85,7 @@ const Blog = () => {
                 <div className="otrosBlogs_title">
                     <h2>Los más vistos</h2>
                 </div>
-                <div className='flex items-center justify-around gap-16'>
+                <div className='blogs_cards_container flex items-center justify-around gap-16'>
                     <div className="otrosBlogs_card flex flex-col gap-8">
                         <img src={rectangulo} alt="" />
                         <div className="otrosBlogs_card flex flex-col gap-8">
@@ -122,7 +122,7 @@ const Blog = () => {
                 <div className="otrosBlogs_title">
                     <h2>Los más recientes</h2>
                 </div>
-                <div className='flex items-center justify-around gap-16'>
+                <div className='blogs_cards_container flex items-center justify-around gap-16'>
                     <div className="otrosBlogs_card flex flex-col gap-8">
                         <img src={rectangulo} alt="" />
                         <div className="otrosBlogs_card flex flex-col gap-8">

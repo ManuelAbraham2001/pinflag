@@ -85,3 +85,95 @@ button:disabled{
         line-height: 60px;
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+
+    .carrousel_contaier_title{
+        
+        h2{
+            font-size: 2rem;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+    
+        p{
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
+    }
+    
+    .line, .short_line{
+        display: none;
+    }
+
+    .carrousel_progress{
+        font-size: 10px;
+        width: 100%;
+        justify-content: space-around;
+        margin: 30px 0;
+    }
+
+    .step{
+        span{
+            display: none;
+        }
+    }
+
+    .test{
+        margin: 0 auto;
+        gap: 20px;
+        flex-direction: column;
+        
+        h2{
+            max-width: 90%;
+            font-size: 1rem;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        img{
+            width: 80%;
+        }
+    }
+
+    .slider-home{
+        padding: 10px;
+
+        .slider_arrow{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px){
+
+    .carrousel_progress{
+        .line, .short_line{
+            display: none;
+        }
+
+        justify-content: space-around;
+
+    }
+
+    .test{
+        margin: 0 auto;
+        gap: 20px;
+        flex-direction: column;
+        
+        h2{
+            max-width: 90%;
+            font-size: 2rem;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        img{
+            width: 80%;
+        }
+    }
+
+}

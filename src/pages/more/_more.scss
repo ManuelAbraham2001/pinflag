@@ -102,9 +102,10 @@
 }
 
 
-.comenzar_tienda{
+.start_stores{
 
     margin: 100px 0;
+    gap: 20px;
 
     p{
         max-width: 730px;
@@ -114,3 +115,119 @@
     }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 1280px) {
+    .more_title{
+
+        margin: 20px 0;
+    
+        h1{
+            font-size: 2rem;
+            line-height: 35px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    
+        p{
+            max-width: 90%;
+            font-size: 1rem;
+            line-height: 20px;
+        }
+    
+    }
+    
+    .customer_benefits_title{
+        font-size: 2rem;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .customer_benefits_card{
+        width: 90%;
+        margin: 15px 0;
+        height: 122px;
+        position: relative;
+    
+        p{
+            max-width: 90%;
+            font-size: 1rem;
+            line-height: 20px;
+            text-align: center;
+        }
+    
+        .icon_test{
+            display: none;
+        }
+    }
+    
+    .start_customers_title{
+    
+        text-align: center;
+        font-size: 2rem;
+        h2{
+            margin: 20px 0;
+        }
+    }
+    
+    .start_customers_container{
+        margin: 50px 0;
+        flex-direction: column;
+        gap: 20px;
+        img{
+            width: 90%;
+            margin: 0 auto;
+            order: 1;
+        }
+        .start_customers_content_img{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    
+    .start_customers_content{
+    
+        max-width: 90%;
+        min-height: auto;
+        align-items: center;
+        text-align: center;
+
+        h2{
+            font-size: 2rem;
+            line-height: 30px;
+        }
+    
+        p{
+            font-size: 1rem;
+            line-height: 25px;
+        }
+    
+        a{
+            border-radius: 30px;
+            font-size: 1rem;
+            padding: 10px 50px;
+        }
+    }
+    
+    .img_hover{
+        :hover{
+            cursor: pointer;
+        }
+    }
+    
+    .start_stores{
+    
+        margin: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+
+        img{
+            order: 1;
+        }
+    
+        p{
+            max-width: 90%;
+            font-size: 1rem;
+            line-height: 25px;
+        }
+    }
+}

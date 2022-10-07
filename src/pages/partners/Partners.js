@@ -91,9 +91,9 @@ export const Partners = () => {
         </div>
         <div className="benefits flex flex-col items-center justify-evenly">
             <div className='benefits_title'>
-                <h2 className='text-center font-bold'>benefits</h2>
+                <h2 className='text-center font-bold'>Beneficios</h2>
             </div>
-            <div className='flex items-start justify-evenly w-full'>
+            <div className='benefits_card_container flex items-start justify-evenly w-full'>
                 <div className="benefits_card flex flex-col items-start justify-center">
                     <h2>Agrega con clicks y no codigo</h2>
                     <p>Utiliza nuestras más de 20 integraciones activando las que desees para tu negocio.</p>

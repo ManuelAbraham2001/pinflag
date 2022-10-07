@@ -48,7 +48,7 @@ const Mores = () => {
             <p className='text-center'>Olvidate de buscar mails de tus pedidos de distintas marcas e ingresar a varios sitios de internet o incluso de llamar a números telefónicos.</p>
         </div>
         <div className="customer_benefits flex flex-col items-center justify-center">
-            <div className="customer_benefits_titulo">
+            <div className="customer_benefits_title">
                 <h2>Conoce tus beneficios</h2>
             </div>
             <div className="customer_benefits_card flex items-center justify-center">
@@ -69,10 +69,10 @@ const Mores = () => {
             </div>
         </div>
         <div className="start_customers flex flex-col items-center justify-center">
-            <div className="start_customers_titulo">
+            <div className="start_customers_title">
                 <h2 className='my-32'>¿Cómo comenzar?</h2>
             </div>
-            <div className="start_customers_container flex items-center justify-evenly w-full">
+            <div className="start_customers_container flex flex-wrap items-center justify-evenly w-full">
                 <div className="start_customers_content">
                     <h2>Compra en nuestras marcas adheridas</h2>
                     <p className='my-8'>{text}</p>
