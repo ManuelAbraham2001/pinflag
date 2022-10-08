@@ -54,7 +54,7 @@ const Slider = () => {
         </div>
         <div className="carrousel_progress flex items-center justify-center w-full">
           <div className="step flex">
-            <span className='mr-2'></span>
+            <span className={count == 0 ? 'span-active' : 'span-not-active'}></span>
             <h3>Checkout</h3>
           </div>
           <div className="short_line mx-2"></div>
@@ -65,7 +65,7 @@ const Slider = () => {
           <div className="line mx-2"></div>
           <div className="short_line mx-2"></div>
           <div className="step flex">
-            <span className='mr-2'></span>
+            <span className={count == 1 ? 'span-active' : 'span-not-active'}></span>
             <h3>Opción de despacho</h3>
           </div>
           <div className="short_line mx-2"></div>
@@ -76,7 +76,7 @@ const Slider = () => {
           <div className="line mx-2"></div>
           <div className="short_line mx-2"></div>
           <div className="step flex">
-            <span className='mr-2'></span>
+            <span className={count == 2 ? 'span-active' : 'span-not-active'}></span>
             <h3>Pago</h3>
           </div>
           <div className="short_line mx-2"></div>
@@ -87,7 +87,7 @@ const Slider = () => {
           <div className="line mx-2"></div>
           <div className="short_line mx-2"></div>
           <div className="step flex">
-            <span className='mr-2'></span>
+            <span className={count == 3 ? 'span-active' : 'span-not-active'}></span>
             <h3>Despacho</h3>
           </div>
         

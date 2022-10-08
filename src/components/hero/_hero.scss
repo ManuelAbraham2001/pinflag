@@ -3,9 +3,13 @@
 .hero_title{
 
     min-height: 430px;
+    position: relative;
+    left: 100px;
+    bottom: 130px;
+
+    width: 60%;
 
     h1{
-        max-width: 800px;
         font-size: 75px;
         font-weight: bold;
         color: $azul;
@@ -25,8 +29,9 @@
     }
 
     a{
-        color: $azul;
+        color: $blanco;
         font-weight: 600;  
+        background-color: $lila;
         border: 2px solid $azul;
         width: fit-content;
         border-radius: 20px;
@@ -37,18 +42,39 @@
 }
 
 .hero{
-    padding: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_video{
+    position: relative;
+    left: 350px;
+    bottom: 100px;
+    overflow: hidden;
+    img{
+        z-index: -9999;
+    }
+    
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .hero{
         flex-direction: column;
         padding: 20px;
+        position:unset;
+    }
+
+    .hero_video{
+        position:unset;
     }
 
     .hero_title{
         justify-content: center;
+        align-items: center;
         gap: 20px;
+        position:unset;
+        width: 90%;
+
         h1{
             max-width: 90%;
             font-size: 2rem;
@@ -68,11 +94,19 @@
     .hero{
         flex-direction: column;
         padding: 20px;
+        position:unset;
+    }
+
+    .hero_video{
+        position:unset;
     }
 
     .hero_title{
         justify-content: center;
         gap: 20px;
+        position: unset;
+        width: 90%;
+        margin: 0 auto;
         h1{
             max-width: 90%;
             font-size: 2.5rem;

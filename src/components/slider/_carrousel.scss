@@ -1,7 +1,7 @@
 @import '../../utilities';
 
 .carrousel_container{
-    margin: 200px 0;
+    margin-bottom: 100px;
 }
 
 .carrousel_contaier_title{
@@ -35,8 +35,17 @@
             width: 25px;
             border-radius: 50%;
             background-color: #E2E2E2;
+            margin-right: 0.5rem;
         }
     }
+}
+
+.span-active{
+    background-color: $calipso !important;
+}
+
+.span-not-active{
+    background-color: #E2E2E2;
 }
 
 .slider-home{
