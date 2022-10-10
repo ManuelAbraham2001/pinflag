@@ -2,12 +2,12 @@
 
 .hero_title{
 
-    min-height: 430px;
+    height: 500px;
     position: relative;
-    left: 100px;
-    bottom: 130px;
+    left: -30px;
+    bottom: 100px;
 
-    width: 60%;
+    max-width: 780px;
 
     h1{
         font-size: 75px;
@@ -41,6 +41,27 @@
 
 }
 
+.video-handler{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(134, 134, 134, 0.607);
+    z-index: 9;
+    overflow-y: hidden;
+
+    video{
+        z-index: 8;
+    }
+}
+
+.hero{
+    height: 1200px;
+    align-items: center;
+    background-image: url('./ilustraciones/home/bg_hero.png');
+    background-repeat: no-repeat;
+    background-position: 790px 2px;
+}
+
 .hero{
     position: relative;
     overflow: hidden;
@@ -48,7 +69,7 @@
 
 .hero_video{
     position: relative;
-    left: 350px;
+    left: 65px;
     bottom: 100px;
     overflow: hidden;
     img{
@@ -57,11 +78,56 @@
     
 }
 
+.hero_svgs{
+    position: absolute;
+    top: 0;
+
+    #location{
+        position: relative;
+        top: 110px;
+        left: 220px
+    }
+
+    #location1{
+        position: relative;
+        bottom: 25px;
+        left: 540px
+    }
+
+    #location2{
+        position: relative;
+        top: 285px;
+        left: 915px
+    }
+
+    #location3{
+        position: relative;
+        top: 620px;
+        left: 230px
+    }
+
+    #location4{
+        position: relative;
+        top: 445px;
+        left: 500px
+    }
+
+    #location5{
+        position: relative;
+        top: 430px;
+        left: 810px;
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .hero{
         flex-direction: column;
         padding: 20px;
         position:unset;
+    }
+
+    .hero_svgs{
+        display: none;
     }
 
     .hero_video{
@@ -97,6 +163,10 @@
         position:unset;
     }
 
+    .hero_svgs{
+        display: none;
+    }
+
     .hero_video{
         position:unset;
     }
@@ -126,6 +196,10 @@
     .hero{
         flex-direction: column;
         padding: 20px;
+    }
+
+    .hero_svgs{
+        display: none;
     }
 
     .hero_title{

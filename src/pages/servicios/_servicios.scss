@@ -6,21 +6,31 @@
     padding: 25px;
     border: 3px dashed #A2AEBB;
     border-radius: 40px;
-    :first-child{
-        background-color: $calipso;
-        color: $blanco;
+    #services-nav-button1, #services-nav-button4{
+        &:focus{
+            background-color: $calipso;
+            color: $blanco;
+        }
+    }
+
+    #services-nav-button2, #services-nav-button5{
+        &:focus{
+            background-color: $lila;
+            color: $blanco;
+        }
+    }
+
+    #services-nav-button3{
+        &:focus{
+            background-color: $azul;
+            color: $blanco;
+        }
     }
 
     button{
         padding: 10px 30px;
         border-radius: 30px;
     }
-
-    :focus{
-        background-color: $calipso;
-        color: $blanco;
-    }
-
 
 }
 

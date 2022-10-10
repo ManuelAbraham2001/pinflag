@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
-import benefitsImg from '../../ilustraciones/beneficios.svg'
-import profilePicture from '../../ilustraciones/profile_picture.svg'
-import stars from '../../ilustraciones/stars.svg'
-import user from '../../ilustraciones/user.svg'
+import benefitsImg from '../../ilustraciones/home/beneficios.svg'
+import profilePicture from '../../ilustraciones/home/profile_picture.svg'
+import stars from '../../ilustraciones/home/stars.svg'
+import user from '../../ilustraciones/home/user.svg'
+import separator from '../../ilustraciones/home/separator-line.svg'
+import estadisticaSvg from '../../ilustraciones/home/estadistica.svg'
+import planetaSvg from '../../ilustraciones/home/planeta.svg'
+import alcanciaSvg from '../../ilustraciones/home/alcancia.svg'
+
 
 const ClientesHome = () => {
 
@@ -66,17 +71,17 @@ const ClientesHome = () => {
                 <p>De ahorro en el costo de envío </p>
             </div>
             <div className="customers_benefits_card flex flex-col items-center justify-center">
-                <img src={benefitsImg} alt='benefits' />
+                <img src={estadisticaSvg} alt='benefits' />
                 <span>40%</span>
                 <p>De ahorro en el costo de envío </p>
             </div>
             <div className="customers_benefits_card flex flex-col items-center justify-center">
-                <img src={benefitsImg} alt='benefits' />
+                <img src={planetaSvg} alt='benefits' />
                 <span>40%</span>
                 <p>De ahorro en el costo de envío </p>
             </div>
             <div className="customers_benefits_card flex flex-col items-center justify-center">
-                <img src={benefitsImg} alt='benefits' />
+                <img src={alcanciaSvg} alt='benefits' />
                 <span>40%</span>
                 <p>De ahorro en el costo de envío </p>
             </div>
@@ -88,7 +93,7 @@ const ClientesHome = () => {
             <h2 className='text-center'>Lo que dicen de <span>nosotros</span></h2>
         </div>
         <div className="opinions_card_container flex-wrap flex items-center justify-center">
-        <div onClick={test} className="opinions_card flex flex-col items-center justify-around">
+            <div onClick={test} className="opinions_card flex flex-col items-center justify-around">
                 <div className="user_picture">
                     <img className={statusCard ? 'filter-none' : 'filter-gray'} src={profilePicture} alt="" />
                 </div>
@@ -101,37 +106,49 @@ const ClientesHome = () => {
                         <img className={statusCard ? 'filter-none' : 'filter-gray'} src={stars} alt="" />
                     </div>
                 </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
                     </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
-                    </div>
-                </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
-                    </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
                     </div>
                 </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
                     </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
+                    </div>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,37 +165,49 @@ const ClientesHome = () => {
                         <img className={statusCard ? 'filter-none' : 'filter-gray'} src={stars} alt="" />
                     </div>
                 </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
                     </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
-                    </div>
-                </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
-                    </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
                     </div>
                 </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
                     </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
+                    </div>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,40 +224,53 @@ const ClientesHome = () => {
                         <img className={statusCard ? 'filter-none' : 'filter-gray'} src={stars} alt="" />
                     </div>
                 </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
                     </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
-                    </div>
-                </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
-                    </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
                     </div>
                 </div>
-                <div className="comments flex items-center justify-center gap-10">
-                    <div className="comments_content flex flex-col items-center gap-4">
-                        <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
-                        <p>Nombre usuario</p>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
                     </div>
-
-                    <div className="comment_comprador flex flex-col gap-4">
-                        <h3>comment comprador</h3>
-                        <p>Envio: Tipo de envio</p>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="comments flex flex-col items-center justify-center gap-10">
+                    <div className="separator">
+                        <img src={separator} alt="" />
+                    </div>
+                    <div className="comments_content flex items-center justify-center gap-10">
+                        <div className="comments_userInfo flex flex-col items-center gap-4">
+                            <img className={statusCard ? 'filter-none' : 'filter-gray'} src={user} alt="" />
+                            <p>Nombre usuario</p>
+                        </div>
+                        <div className="comment_comprador flex flex-col gap-4 h-full justify-between">
+                            <h3>comment comprador</h3>
+                            <p>Envio: Tipo de envio</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     </>

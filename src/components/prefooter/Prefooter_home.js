@@ -1,9 +1,9 @@
 import React from 'react'
-import slider from '../../ilustraciones/slider.png'
-import paso1 from '../../ilustraciones/paso1.svg'
-import paso2 from '../../ilustraciones/paso2.svg'
-import paso3 from '../../ilustraciones/paso3.svg'
-import paso4 from '../../ilustraciones/paso4.svg'
+import slider from '../../ilustraciones/home/slider.png'
+import paso1 from '../../ilustraciones/home/paso1.svg'
+import paso2 from '../../ilustraciones/home/paso2.svg'
+import paso3 from '../../ilustraciones/home/paso3.svg'
+import paso4 from '../../ilustraciones/home/paso4.svg'
 
 const Prefooter_home = () => {
   return (

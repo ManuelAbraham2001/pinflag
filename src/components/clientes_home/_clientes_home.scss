@@ -57,6 +57,10 @@
 
 .customers_benefits_card{
 
+    img{
+        height: 300px;
+    }
+
     border: 3px dashed #A2AEBB;
     border-radius: 20px;
     margin: 0 30px;
@@ -144,6 +148,10 @@
     }
 }
 
+.separator{
+    margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     
     .orders_usuarios{
@@ -219,7 +227,7 @@
         margin: 20px 0;
     }
 
-    .comments_content{
+    .comments_userInfo{
         text-align: center;
     }
 

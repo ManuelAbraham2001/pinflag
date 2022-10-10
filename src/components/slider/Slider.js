@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import sliderImg from '../../ilustraciones/slider.svg'
+import sliderImg from '../../ilustraciones/home/slider.svg'
 import Item from './Item'
 
 
@@ -94,7 +94,7 @@ const Slider = () => {
         </div>
         <div className="slider-home flex items-center justify-between w-full">
           
-            <button onClick={() => res()} disabled={disableRes} className='slider_arrow'></button>
+            <button onClick={() => res()} disabled={disableRes} className='slider_arrow' id='resHandler'></button>
 
               {
                   
@@ -102,7 +102,10 @@ const Slider = () => {
                   
               }
           
-          <button onClick={() => add()} disabled={disableAdd} className='slider_arrow'></button>
+          <button onClick={() => add()} disabled={disableAdd} className='slider_arrow' id='addHandler'></button>
+        </div>
+        <div className="video_explanatory_button">
+            <a href="#">Ver video explicativo</a>
         </div>
     </div>
   )

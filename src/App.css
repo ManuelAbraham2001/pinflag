@@ -37,6 +37,22 @@
   font-weight: bold;
 }
 
+.arrow_menu {
+  position: absolute;
+  width: 225px;
+  top: 80px;
+  background-color: #fff;
+  z-index: 999999999999999;
+  border-top: 4px solid #685CEB;
+}
+.arrow_menu li {
+  padding: 20px;
+}
+.arrow_menu li:hover {
+  color: #685CEB;
+  background-color: rgb(236, 236, 236);
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .header {
     padding: 10px 20px;
@@ -76,11 +92,11 @@
   }
 }
 .hero_title {
-  min-height: 430px;
+  height: 500px;
   position: relative;
-  left: 100px;
-  bottom: 130px;
-  width: 60%;
+  left: -30px;
+  bottom: 100px;
+  max-width: 780px;
 }
 .hero_title h1 {
   font-size: 75px;
@@ -108,6 +124,26 @@
   padding: 10px 20px;
 }
 
+.video-handler {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(134, 134, 134, 0.607);
+  z-index: 9;
+  overflow-y: hidden;
+}
+.video-handler video {
+  z-index: 8;
+}
+
+.hero {
+  height: 1200px;
+  align-items: center;
+  background-image: url("./ilustraciones/home/bg_hero.png");
+  background-repeat: no-repeat;
+  background-position: 790px 2px;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -115,7 +151,7 @@
 
 .hero_video {
   position: relative;
-  left: 350px;
+  left: 65px;
   bottom: 100px;
   overflow: hidden;
 }
@@ -123,11 +159,49 @@
   z-index: -9999;
 }
 
+.hero_svgs {
+  position: absolute;
+  top: 0;
+}
+.hero_svgs #location {
+  position: relative;
+  top: 110px;
+  left: 220px;
+}
+.hero_svgs #location1 {
+  position: relative;
+  bottom: 25px;
+  left: 540px;
+}
+.hero_svgs #location2 {
+  position: relative;
+  top: 285px;
+  left: 915px;
+}
+.hero_svgs #location3 {
+  position: relative;
+  top: 620px;
+  left: 230px;
+}
+.hero_svgs #location4 {
+  position: relative;
+  top: 445px;
+  left: 500px;
+}
+.hero_svgs #location5 {
+  position: relative;
+  top: 430px;
+  left: 810px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .hero {
     flex-direction: column;
     padding: 20px;
     position: unset;
+  }
+  .hero_svgs {
+    display: none;
   }
   .hero_video {
     position: unset;
@@ -156,6 +230,9 @@
     padding: 20px;
     position: unset;
   }
+  .hero_svgs {
+    display: none;
+  }
   .hero_video {
     position: unset;
   }
@@ -181,6 +258,9 @@
   .hero {
     flex-direction: column;
     padding: 20px;
+  }
+  .hero_svgs {
+    display: none;
   }
   .hero_title {
     justify-content: center;
@@ -260,6 +340,22 @@
   height: 80px;
   border-radius: 50%;
   background-color: #685CEB;
+  background-image: url("./ilustraciones/home/arrow_slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#resHandler {
+  transform: rotate(180deg);
+}
+
+.video_explanatory_button a {
+  background-color: #685CEB;
+  color: #fff;
+  border: 1px solid #173554;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 24px;
 }
 
 .slider_content h2 {
@@ -407,6 +503,9 @@ button:disabled {
   width: 400px;
 }
 .customers_benefits_card img {
+  height: 300px;
+}
+.customers_benefits_card img {
   width: 300px;
   position: relative;
   bottom: 30px;
@@ -470,6 +569,10 @@ button:disabled {
   bottom: 40px;
 }
 
+.separator {
+  margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .orders_usuarios {
     height: auto;
@@ -526,7 +629,7 @@ button:disabled {
     text-align: center;
     margin: 20px 0;
   }
-  .comments_content {
+  .comments_userInfo {
     text-align: center;
   }
 }
@@ -1135,6 +1238,10 @@ path {
   line-height: 53px;
 }
 
+.c-calipso {
+  color: #33CCCC;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 1280px) {
   .more_title {
     margin: 20px 0;
@@ -1301,17 +1408,21 @@ path {
   border: 3px dashed #A2AEBB;
   border-radius: 40px;
 }
-.step_nav :first-child {
+.step_nav #services-nav-button1:focus, .step_nav #services-nav-button4:focus {
   background-color: #33CCCC;
+  color: #fff;
+}
+.step_nav #services-nav-button2:focus, .step_nav #services-nav-button5:focus {
+  background-color: #685CEB;
+  color: #fff;
+}
+.step_nav #services-nav-button3:focus {
+  background-color: #173554;
   color: #fff;
 }
 .step_nav button {
   padding: 10px 30px;
   border-radius: 30px;
-}
-.step_nav :focus {
-  background-color: #33CCCC;
-  color: #fff;
 }
 
 .services_container {

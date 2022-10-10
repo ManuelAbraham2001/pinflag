@@ -1,6 +1,6 @@
 import React from 'react'
 import rectangulo from '../../ilustraciones/rectangulo.png'
-import hero from '../../ilustraciones/trazabilidad.png'
+import hero from '../../ilustraciones/servicios/trazabilidad.png'
 
 const Trazabilidad = () => {
   return (

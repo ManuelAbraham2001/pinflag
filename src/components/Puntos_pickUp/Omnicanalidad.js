@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImg	from '../../ilustraciones/omnicanalidad_hero.png'
+import heroImg	from '../../ilustraciones/servicios/omnicanalidad_hero.png'
 import rectangulo from '../../ilustraciones/rectangulo.png'
 
 const Omnicanalidad = () => {

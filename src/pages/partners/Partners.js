@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import rectangulo from '../../ilustraciones/rectangulo.png'
-import benefits1 from '../../ilustraciones/beneficios1.png'
-import benefits2 from '../../ilustraciones/beneficios2.png'
-import logos from '../../ilustraciones/partners_logo.png'
+import rectangulo from '../../ilustraciones/partners/rectangulo.png'
+import benefits1 from '../../ilustraciones/partners/beneficios1.png'
+import benefits2 from '../../ilustraciones/partners/beneficios2.png'
+import logos from '../../ilustraciones/partners/partners_logo.png'
 import PartnersLogos from './PartnersLogos'
 
 export const Partners = () => {

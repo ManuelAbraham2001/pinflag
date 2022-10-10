@@ -1,6 +1,6 @@
 import React from 'react'
-import hero from '../../ilustraciones/hero_blog.png'
-import rectangulo from '../../ilustraciones/rectangulo_blog.png'
+import hero from '../../ilustraciones/blog/hero_blog.png'
+import rectangulo from '../../ilustraciones/blog/rectangulo_blog.png'
 
 const Blog = () => {
   return (

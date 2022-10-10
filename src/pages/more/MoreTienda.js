@@ -1,5 +1,5 @@
 import React from 'react'
-import tiendas from '../../ilustraciones/tiendas.png'
+import tiendas from '../../ilustraciones/tiendas/tiendas.png'
 
 const MoreTienda = () => {
   return (

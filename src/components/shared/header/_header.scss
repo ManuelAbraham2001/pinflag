@@ -15,6 +15,23 @@
     }
 }
 
+.arrow_menu{
+    position: absolute;
+    width: 225px;
+    top: 80px;
+    background-color: $blanco;
+    z-index: 999999999999999;
+    border-top: 4px solid $lila;
+    
+    li{
+        padding: 20px;
+        &:hover{
+            color: $lila;
+            background-color: rgb(236, 236, 236);
+        }
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px){
     
     .header{

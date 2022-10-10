@@ -71,6 +71,24 @@
     height: 80px;
     border-radius: 50%;
     background-color: $lila;
+    background-image: url('./ilustraciones/home/arrow_slider.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#resHandler{
+    transform: rotate(180deg);
+}
+
+.video_explanatory_button{
+    a{
+        background-color: $lila;
+        color: $blanco;
+        border: 1px solid $azul;
+        padding: 10px 20px;
+        border-radius: 40px;
+        font-size: 24px;
+    }
 }
 
 .slider_content{

@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import logo1 from '../../ilustraciones/lippi.png'
-import logo2 from '../../ilustraciones/haka.png'
-import logo3 from '../../ilustraciones/geography.png'
-import logo4 from '../../ilustraciones/wd40.png'
+import logo1 from '../../ilustraciones/clientes/lippi.png'
+import logo2 from '../../ilustraciones/clientes/haka.png'
+import logo3 from '../../ilustraciones/clientes/geography.png'
+import logo4 from '../../ilustraciones/clientes/wd40.png'
 import Marcas from '../../components/marcas/Marcas'
-import more1 from '../../ilustraciones/more1.png'
-import playstore from '../../ilustraciones/playstore.png'
-import appstore from '../../ilustraciones/appstore.png'
-import mobileapp from '../../ilustraciones/mobileapp.png'
+import more1 from '../../ilustraciones/clientes/more1.png'
+import playstore from '../../ilustraciones/clientes/playstore.png'
+import appstore from '../../ilustraciones/clientes/appstore.png'
+import mobileapp from '../../ilustraciones/clientes/mobileapp.png'
 
 const marcas = [
     {

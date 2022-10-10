@@ -1,11 +1,11 @@
 import React from 'react'
-import servicios from '../../ilustraciones/servicios.svg'
-import pickups1 from '../../ilustraciones/pickups1.svg'
-import pickups2 from '../../ilustraciones/pickups2.svg'
-import pickups3 from '../../ilustraciones/pickups3.svg'
-import pickups4 from '../../ilustraciones/pickups4.svg'
-import pickups6 from '../../ilustraciones/pickups6.svg'
-import camion from '../../ilustraciones/paso3.svg'
+import servicios from '../../ilustraciones/servicios/servicios.svg'
+import pickups1 from '../../ilustraciones/servicios/pickups1.svg'
+import pickups2 from '../../ilustraciones/servicios/pickups2.svg'
+import pickups3 from '../../ilustraciones/servicios/pickups3.svg'
+import pickups4 from '../../ilustraciones/servicios/pickups4.svg'
+import pickups6 from '../../ilustraciones/servicios/pickups6.svg'
+import camion from '../../ilustraciones/home/paso3.svg'
 
 const Pickups = () => {
   return (
