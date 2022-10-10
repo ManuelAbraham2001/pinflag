@@ -1,0 +1,9 @@
+.c-calipso{
+    color: #33CCCC;
+}
+.dotted-img{
+    border: 3px dotted black;
+    border-radius: 99px;
+    width: 120px;
+    height: 120px;
+}

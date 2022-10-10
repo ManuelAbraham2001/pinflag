@@ -7,6 +7,7 @@ import { Partners } from './pages/partners/Partners';
 import More from './pages/more/More'
 import Footer from './components/shared/footer/Footer';
 import MoreTienda from './pages/more/MoreTienda';
+import MoreUs from './pages/more/MoreUs';
 import Servicios from './pages/servicios/Servicios';
 import Blog from './pages/blog/Blog';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -24,6 +25,7 @@ function App() {
                 <Route path='/blog' element={<Blog/>} />
                 <Route path='/mas/clientes' element={<More/>} />
                 <Route path='/mas/tiendas' element={<MoreTienda/>} />
+                <Route path='/mas/nosotros' element={<MoreUs/>} />
             </Routes>
           <Footer></Footer>
       </BrowserRouter>
