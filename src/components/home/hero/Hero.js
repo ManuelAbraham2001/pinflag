@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
-import video from '../../ilustraciones/home/video_hero.png'
-import location from '../../ilustraciones/home/location.svg'
-import location1 from '../../ilustraciones/home/location1.svg'
-import location2 from '../../ilustraciones/home/location2.svg'
-import location3 from '../../ilustraciones/home/location3.svg'
-import location4 from '../../ilustraciones/home/location4.svg'
-import location5 from '../../ilustraciones/home/location5.svg'
+import video from '../../../ilustraciones/home/video_hero.png'
+import location from '../../../ilustraciones/home/location.svg'
+import location1 from '../../../ilustraciones/home/location1.svg'
+import location2 from '../../../ilustraciones/home/location2.svg'
+import location3 from '../../../ilustraciones/home/location3.svg'
+import location4 from '../../../ilustraciones/home/location4.svg'
+import location5 from '../../../ilustraciones/home/location5.svg'
 import ReactPlayer from 'react-player';
-import pointer_line_hero from '../../ilustraciones/pointer_line_hero.svg'
 
 const Hero = () => {
 
@@ -16,10 +15,7 @@ const Hero = () => {
   const videoHandler = () => {
 
     document.body.style.overflow = "hidden"
-    setTimeout(function(){
-        document.querySelector('#video-handler').scrollIntoView({block: "center", behavior: "smooth"});
-    }, 500);
-    
+
     const closeHandler = e => {
         if(e.target.id === 'video-handler'){
             document.body.style.overflow = "scroll"
@@ -33,9 +29,10 @@ const Hero = () => {
             <div>
                 <ReactPlayer
                 url='https://www.youtube.com/watch?v=fpJtOyZVeIA'
-                className='react-player mx-auto'
-                id='react-player-video'
+                className='react-player'
                 controls
+                width='1600px'
+                height='800px'
                 />
             </div>
         </div>
@@ -52,9 +49,6 @@ const Hero = () => {
                 <a href="#">Ver video</a>
             </div>
             {videoStatus}
-            <div className="pointer_line_hero">
-                <img src={pointer_line_hero} alt="" />
-            </div>
             <div className="hero_video">
                 <img className='hover:cursor-pointer' onClick={() => videoHandler()} src={video} alt="video" />
             </div>

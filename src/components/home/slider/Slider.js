@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import sliderImg from '../../ilustraciones/home/slider.svg'
+import sliderImg from '../../../ilustraciones/home/slider.svg'
 import Item from './Item'
 
 

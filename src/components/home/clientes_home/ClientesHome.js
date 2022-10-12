@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import benefitsImg from '../../ilustraciones/home/beneficios.svg'
-import profilePicture from '../../ilustraciones/home/profile_picture.svg'
-import stars from '../../ilustraciones/home/stars.svg'
-import user from '../../ilustraciones/home/user.svg'
-import separator from '../../ilustraciones/home/separator-line.svg'
-import estadisticaSvg from '../../ilustraciones/home/estadistica.svg'
-import planetaSvg from '../../ilustraciones/home/planeta.svg'
-import alcanciaSvg from '../../ilustraciones/home/alcancia.svg'
+import benefitsImg from '../../../ilustraciones/home/beneficios.svg'
+import profilePicture from '../../../ilustraciones/home/profile_picture.svg'
+import stars from '../../../ilustraciones/home/stars.svg'
+import user from '../../../ilustraciones/home/user.svg'
+import separator from '../../../ilustraciones/home/separator-line.svg'
+import estadisticaSvg from '../../../ilustraciones/home/estadistica.svg'
+import planetaSvg from '../../../ilustraciones/home/planeta.svg'
+import alcanciaSvg from '../../../ilustraciones/home/alcancia.svg'
 
 
 const ClientesHome = () => {
