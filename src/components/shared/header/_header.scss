@@ -1,7 +1,9 @@
 @import '../../../utilities';
 
 .header{
+    background-color: #fff;
     padding: 20px 30px;
+    z-index: 9999999999;
 
     ul{
         li{
@@ -23,6 +25,12 @@
             background-color: $calipso-hover;
         }
     }
+}
+
+.sticky-header{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .arrow_menu{

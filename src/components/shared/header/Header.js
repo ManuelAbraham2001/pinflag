@@ -17,7 +17,24 @@ const Header = () => {
     useEffect(() => {
         setTabActive('inicio')
     }, [])
+
+    const stickyNav = () => {
+        const nav = document.getElementById("navBar")
+        if (window.scrollY > 150) {
+            nav.classList.add("sticky-header")
+          } else {
+            nav.classList.remove("sticky-header");
+        }
+    }
+
+    useEffect(() => {
+        window.onscroll = function() {stickyNav()}
+    }, [])
     
+    
+    
+
+
     const arrowMenu = () => {
         if(arrowDown === true){
             isArrowDown(false)
@@ -99,7 +116,7 @@ const Header = () => {
 
 
   return (
-    <div className='header flex justify-between items-center w-full shadow-md'>
+    <div onScroll={() => stickyNav()} id='navBar' className='header flex justify-between items-center w-full shadow-md'>
         <div className="header_content flex justify-between items-center w-2/4">
             <div className="header_logo">
                 <img src={logo} alt="logo" />

@@ -167,6 +167,11 @@
         }
     
     }
+
+    .react-player{
+        width: 300px !important;
+        height: 200px !important;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
@@ -208,6 +213,11 @@
         }
     
     }
+
+    .react-player{
+        width: 450px !important;
+        height: 300px !important;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1279px){
@@ -235,6 +245,11 @@
             line-height: 40px;
         }
     
+    }
+
+    .react-player{
+        width: 720px !important;
+        height: 360px !important;
     }
 }
 
@@ -276,6 +291,11 @@
             line-height: 40px;
         }
     
+    }
+
+    .react-player{
+        width: 1200px !important;
+        height: 600px !important;
     }
 }
 
