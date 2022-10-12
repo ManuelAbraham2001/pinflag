@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Slider from '@mui/material/Slider';
 import { createTheme } from '@mui/material/styles';
 import CheckIcon from '@mui/icons-material/Check';
+import slider_svg from '../../ilustraciones/slider_steps.svg'
 
 const theme = createTheme({
   palette: {
@@ -22,10 +23,11 @@ const theme = createTheme({
 
 const Planes = () => {
 
+
+
     const [value, setValue] = useState(0)
     const [precio, setPrecio] = useState(99)
 
-    console.log(value);
 
     let updatePrice = e => {
 

@@ -6,25 +6,20 @@
     padding: 25px;
     border: 3px dashed #A2AEBB;
     border-radius: 40px;
-    #services-nav-button1, #services-nav-button4{
-        &:focus{
-            background-color: $calipso;
-            color: $blanco;
-        }
+    font-family: 'Inter', sans-serif;
+    .calipso-tab-active{
+        background-color: $calipso;
+        color: $blanco;
     }
 
-    #services-nav-button2, #services-nav-button5{
-        &:focus{
-            background-color: $lila;
-            color: $blanco;
-        }
+    .lila-tab-active{
+        background-color: $lila;
+        color: $blanco;
     }
 
-    #services-nav-button3{
-        &:focus{
+    .blue-tab-active{
             background-color: $azul;
             color: $blanco;
-        }
     }
 
     button{
@@ -56,6 +51,7 @@
         line-height: 34px;
         color: $azul;
         max-width: 870px;
+        font-family: 'Inter', sans-serif;
     }
 
 }
@@ -101,7 +97,12 @@
         line-height: 30px;
         max-width: 230px;
         text-align: center;
+        font-family: 'Inter', sans-serif;
     }
+}
+
+#bubble_p2_trazabilidad, #bubble_p2_checkout{
+    max-width: 300px;
 }
 
 .pickup_services_content{
@@ -129,9 +130,11 @@
         font-weight: 400;
         line-height: 34px;
         color: $azul;
+        font-family: 'Inter', sans-serif;
 
         span{
             font-weight: 700;
+            font-family: 'Inter', sans-serif;
         }
     }
 }
@@ -224,6 +227,10 @@
         margin: 100px auto;
         align-items: center;
         gap: 20px;
+
+        .pickup_services_img{
+            order: 1;
+        }
     }
 
     .pickup_services_content{
@@ -263,7 +270,7 @@
         .camion{
             width: 20%;
             top: -20px;
-            right: 34px;
+            right: 10%;
         }
     }   
 }
@@ -399,10 +406,14 @@
         
         .camion{
             width: 30%;
-            top: -35px;
+            top: -20%;
             right: 52px;
         }
-    }   
+    } 
+
+    #pickup_services_p{
+        margin-bottom: 50px;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px){
@@ -518,5 +529,15 @@
     .shadow-lg{
         box-shadow: 0 0 #0000;
     }
+
+    .pickup_services_img{
+        .camion{
+            width: 50%;
+            top: -28%;
+            left: 50%;
+        }
+    
+    }
+
 
 }

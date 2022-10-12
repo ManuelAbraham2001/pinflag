@@ -17,7 +17,8 @@
 }
 
 .setp_by_step{
-    margin: 200px 0;
+    margin: 80px auto;
+    width: 95%;
 }
 
 .setp_by_step_img{
@@ -26,10 +27,73 @@
         font-weight: 700;
         line-height: 31px;
         margin-top: 10px;
+        font-family: 'Inter', sans-serif;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+.pointed_lines_prefooter{
+    position: absolute;
+    #pointed_line_prefooter1{
+        position: absolute;
+        bottom: 210px;
+        left: 240px;
+    }
+
+    #pointed_line_prefooter2{
+        position: absolute;
+        bottom: 30px;
+        left: 685px;
+    }
+    
+    #pointed_line_prefooter3{
+        position: relative;
+        bottom: 140px;
+        left: 1100px;
+    }
+
+}
+
+.slider_brans{
+    width: 100%;
+    height: auto;
+    margin: 200px auto;
+    overflow: hidden;
+    background-color: $calipso;
+
+    .slider_brans_track{
+        animation: scroll 20s linear infinite;
+        -webkit-animation: scroll 20s linear infinite;
+        width: calc(260px * 12);
+    }
+
+    .slide{
+        width: 260px;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-260px * 4));
+        -webkit-transform: translateX(calc(-260px * 4));
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .prefooter_title{
+        h2{
+            font-size: 2rem;
+            line-height: 40px;
+        }
+    }
+    
     .setp_by_step{
         flex-direction: column;
         align-items: center;
@@ -37,6 +101,60 @@
         
         .setp_by_step_img{
             margin: 20px 0;
+
+            span{
+                font-size: 1.5rem;
+                line-height: 25px;
+            }
+            
         }
+    }
+
+    .pointed_lines_prefooter{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+    .prefooter_title{
+
+        h2{
+            font-size: 2.2rem;
+            line-height: 50px;
+        }
+    }
+
+    .pointed_lines_prefooter{
+        display: none;
+    }
+    
+    .setp_by_step{
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        
+        .setp_by_step_img{
+            margin: 20px 0;
+
+            img{
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            span{
+                font-size: 1.5rem;
+                line-height: 25px;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1858px) {
+    .pointed_lines_prefooter{
+        display: none;
     }
 }

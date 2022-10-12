@@ -1,6 +1,8 @@
 import React from 'react'
 import rectangulo from '../../ilustraciones/rectangulo.png'
 import hero from '../../ilustraciones/servicios/trazabilidad.png'
+import inteligencia_artificial from '../../ilustraciones/servicios/inteligencia_artificial.png'
+import notificaciones_seguimiento from '../../ilustraciones/servicios/notificaciones_seguimiento.png'
 
 const Trazabilidad = () => {
   return (
@@ -22,11 +24,11 @@ const Trazabilidad = () => {
             <div className="bubbles_container flex items-center mx-auto justify-between">
                 <div className="bubble flex items-center flex-col justify-center">
                     <h2>+90%</h2>
-                    <p>En tasa de aperturade e-mails de seguimiento</p>
+                    <p id='bubble_p1_trazabilidad'>En tasa de aperturade e-mails de seguimiento</p>
                 </div>
                 <div className="bubble flex items-center flex-col justify-center">
                     <h2>+60%</h2>
-                    <p>De disminución de llamadas o contacto por servicio de atención a clientes.</p>
+                    <p id='bubble_p2_trazabilidad'>De disminución de llamadas o contacto por servicio de atención a clientes.</p>
                 </div>
             </div>
         </div>
@@ -38,7 +40,7 @@ const Trazabilidad = () => {
                     <p className='max-w-xl'>Mejora la experiencia de tus clientes con el envío automático de correos de seguimiento. <span>9 de cada 10 usuarios abren este correo.</span></p>
                 </div>
                 <div className="pickup_services_img">
-                    <img src={rectangulo} alt="" />
+                    <img src={notificaciones_seguimiento} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">
@@ -74,7 +76,7 @@ const Trazabilidad = () => {
                     <p className='max-w-4xl'>Nuestro “tracking predictive” ofrece una experiencia más completa al darle una información aproximada de la fecha de entrega a tu cliente. <span>El 50% de los clientes fidelizados vuelve a comprar.</span> </p>
                 </div>
                 <div className="pickup_services_img">
-                    <img src={rectangulo} alt="" />
+                    <img src={inteligencia_artificial} alt="" />
                 </div>
             </div>
         </div>

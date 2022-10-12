@@ -1,6 +1,8 @@
 import React from 'react'
 import rectangulo from '../../ilustraciones/rectangulo.png'
 import hero from '../../ilustraciones/servicios/etiquetasHero.png'
+import facilitar_compradores from '../../ilustraciones/servicios/facilitar_compradores.png'
+import login from '../../ilustraciones/servicios/login.png'
 
 const Checkout = () => {
   return (
@@ -22,11 +24,11 @@ const Checkout = () => {
             <div className="bubbles_container flex items-center mx-auto justify-between">
                 <div className="bubble flex items-center flex-col justify-center">
                     <h2>+90%</h2>
-                    <p>En tasa de aperturade e-mails de seguimiento</p>
+                    <p id='bubble_p1_checkout'>En tasa de aperturade e-mails de seguimiento</p>
                 </div>
                 <div className="bubble flex items-center flex-col justify-center">
                     <h2>+60%</h2>
-                    <p>De disminución de llamadas o contacto por servicio de atención a clientes.</p>
+                    <p id='bubble_p2_checkout'>De disminución de llamadas o contacto por servicio de atención a clientes.</p>
                 </div>
             </div>
         </div>
@@ -38,7 +40,7 @@ const Checkout = () => {
                     <p className='max-w-xl'>Aumenta tus ingresos y no pierdas ventas por la fricción de tu check-out. Con una carga más rápida, con menos clicks y redirecciones, <span>nuestro sistema es un 30% más eficiente y convierte un</span></p>
                 </div>
                 <div className="pickup_services_img">
-                    <img src={rectangulo} alt="" />
+                    <img src={facilitar_compradores} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">
@@ -47,7 +49,7 @@ const Checkout = () => {
                     <p className='max-w-xl'>Ya no es necesario rellenar tus datos una y otra vez. Ahora, cualquier sitio asociado a Pinflag, dará la opción de comprar más rápidamente en una próxima compra gracias a un check-out más simplificado. <span>Gracias a esto, el 60% de los consumidores suelen comprar tres veces más.</span></p>
                 </div>
                 <div className="pickup_services_img order-first">
-                    <img src={rectangulo} alt="" />
+                    <img src={login} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">

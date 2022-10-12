@@ -7,10 +7,12 @@ import { Partners } from './pages/partners/Partners';
 import More from './pages/more/More'
 import Footer from './components/shared/footer/Footer';
 import MoreTienda from './pages/more/MoreTienda';
-import MoreUs from './pages/more/MoreUs';
 import Servicios from './pages/servicios/Servicios';
 import Blog from './pages/blog/Blog';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
+import MoreUs from './pages/more/MoreUs';
+import BlogView from './pages/blog/BlogView';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
                 <Route path='/planes' element={<Planes/>} />
                 <Route path='/partners' element={<Partners/>} />
                 <Route path='/blog' element={<Blog/>} />
+                <Route path='/blog/view' element={<BlogView/>} />
                 <Route path='/mas/clientes' element={<More/>} />
                 <Route path='/mas/tiendas' element={<MoreTienda/>} />
                 <Route path='/mas/nosotros' element={<MoreUs/>} />

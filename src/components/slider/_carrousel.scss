@@ -23,6 +23,7 @@
         font-weight: 500;
         font-size: 35px;
         line-height: 52px;
+        font-family: 'Inter', sans-serif;
     }
 }
 
@@ -37,6 +38,9 @@
             background-color: #E2E2E2;
             margin-right: 0.5rem;
         }
+        h3{
+            font-family: 'Inter', sans-serif;
+        }
     }
 }
 
@@ -50,6 +54,10 @@
 
 .slider-home{
     padding: 50px;
+}
+
+.mobile_controllers{
+    display: none;
 }
 
 .line{
@@ -74,6 +82,10 @@
     background-image: url('./ilustraciones/home/arrow_slider.svg');
     background-repeat: no-repeat;
     background-position: center;
+
+    &:hover{
+        background-color: $lila-hover;
+    }
 }
 
 #resHandler{
@@ -88,6 +100,10 @@
         padding: 10px 20px;
         border-radius: 40px;
         font-size: 24px;
+
+        &:hover{
+            background-color: $lila-hover;
+        }
     }
 }
 
@@ -105,6 +121,7 @@ button:disabled{
     margin: 0 auto;
     gap: 20px;
     h2{
+        font-family: 'Inter', sans-serif;
         max-width: 600px;
         font-weight: 500;
         color:$azul;
@@ -165,11 +182,35 @@ button:disabled{
 
     .slider-home{
         padding: 10px;
+        flex-direction: column;
 
         .slider_arrow{
             width: 40px;
             height: 40px;
             border-radius: 50%;
+            position: relative;
+        }
+
+    }
+
+    #resHandler, #addHandler{
+        display: none;
+    }
+
+    .mobile_controllers{
+        display: flex;
+    }
+
+    .video_explanatory_button{
+        margin-top: 50px;
+
+        a{
+            background-color: $lila;
+            color: $blanco;
+            border: 1px solid $azul;
+            padding: 5px 10px;
+            border-radius: 40px;
+            font-size: 1rem;
         }
     }
 
@@ -185,7 +226,7 @@ button:disabled{
         justify-content: space-around;
 
     }
-
+    
     .test{
         margin: 0 auto;
         gap: 20px;

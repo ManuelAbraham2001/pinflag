@@ -101,6 +101,11 @@ const Slider = () => {
                 <Item key={count} title={sliderContent[count].title} img={sliderContent[count].image}></Item> // envio propiedades
                   
               }
+
+              <div className="mobile_controllers w-full flex justify-around items-center mt-4">
+                <button onClick={() => res()} disabled={disableRes} className='slider_arrow rotate-180'></button>
+                <button onClick={() => add()} disabled={disableAdd} className='slider_arrow'></button>
+              </div>
           
           <button onClick={() => add()} disabled={disableAdd} className='slider_arrow' id='addHandler'></button>
         </div>

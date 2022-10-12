@@ -1,20 +1,32 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../../../ilustraciones/logo.svg"
+import arrow_down from '../../../ilustraciones/arrow_down.png'
+import bars from '../../../ilustraciones/bars.png'
+import close from '../../../ilustraciones/close.png'
 
 const Header = () => {
 
-
     const [menuArrow, setArrowMenu] = useState(<></>)
     const [arrowMenuStatus, isArrowMenu] = useState(false)
-    // window.addEventListener('click', e => {
-    //     if(e.target.id !== 'arrow-menu'){
-    //         setArrowMenu(<></>)
-    //         isArrowMenu(false)
-    //     }
-    // })
+    const [arrowDown, isArrowDown] = useState(false)
+    const [menuMobile, setMenuMobile] = useState(<></>)
+    const [mobileMenuStatus, isMobileMenu] = useState(false)
+    const [tabActive, setTabActive] = useState('inicio')
 
+    useEffect(() => {
+        setTabActive('inicio')
+    }, [])
+    
     const arrowMenu = () => {
+        if(arrowDown === true){
+            isArrowDown(false)
+        }else{
+            isArrowDown(true)
+        }
+
+        setTabActive('mas')
+        
         if(arrowMenuStatus === false){
             setArrowMenu(
             <> 
@@ -39,6 +51,52 @@ const Header = () => {
 
     }
 
+    const mobileMenu = () => {
+        if(mobileMenuStatus === false){
+            setMenuMobile(
+            <> 
+            <div className='mobile_menu shadow-xl flex flex-col items-end justify-center'>
+            <div className="flex justify-between items-center w-full">
+                <img className='logoImg' src={logo} alt="logo" />
+                <img className='closeImg' src={close} alt="" />
+            </div>
+            
+                <ul>
+                    <li className='font-bold my-4'>
+                        <Link to={'/'}>Inicio</Link>
+                    </li>
+                    <li className='font-bold my-4'>
+                        <Link to={'/servicios'}>Servicios</Link>
+                    </li>
+                    <li className='font-bold my-4'>
+                        <Link to={'/planes'}>Planes</Link>
+                    </li>
+                    <li className='font-bold my-4'>
+                        <Link to={'/partners'}>Partners</Link>
+                    </li>
+                    <li className='font-bold my-4'>
+                        <Link to={'/blog'}>Blog</Link>
+                    </li>
+                    <li className='font-bold my-4'>
+                        <Link to={'/mas/clientes'}>Clientes</Link>
+                    </li>
+                    <li className='font-bold my-4'>
+                        <Link to={'/mas/tiendas'}>Tiendas</Link>
+                    </li>
+                    <li className='font-bold my-4'>
+                        <Link to={'/mas/nosotros'}>Nosotros</Link>
+                    </li>
+                </ul>
+            </div>
+            </>
+            )
+            isMobileMenu(true)
+        }else if(mobileMenuStatus === true){
+            setMenuMobile(<></>)
+            isMobileMenu(false)
+        }
+    }
+
 
   return (
     <div className='header flex justify-between items-center w-full shadow-md'>
@@ -49,22 +107,23 @@ const Header = () => {
             <div className="header_nav">
             <ul className='header_nav_ul flex'>
                 <li className='mx-6 font-bold'>
-                    <Link to={'/'} className='font-bold'>Inicio</Link>
+                    <Link onClick={() => setTabActive('inicio')} id='inicio' to={'/'} className={tabActive === 'inicio' ? 'tab-active' : 'tab-not-active'}>Inicio</Link>
                 </li>
                 <li className='mx-6 font-bold'>
-                    <Link to={'/servicios'} className='font-bold'>Servicios</Link>
+                    <Link onClick={() => setTabActive('servicios')} to={'/servicios'} className={tabActive === 'servicios' ? 'tab-active' : 'tab-not-active'} >Servicios</Link>
                 </li>
                 <li className='mx-6 font-bold'>
-                    <Link to={'/planes'} className='font-bold'>Planes</Link>
+                    <Link onClick={() => setTabActive('planes')} to={'/planes'} className={tabActive === 'planes' ? 'tab-active' : 'tab-not-active'} >Planes</Link>
                 </li>
                 <li className='mx-6 font-bold'>
-                    <Link to={'/partners'} className='font-bold'>Partners</Link>
+                    <Link onClick={() => setTabActive('partners')} to={'/partners'} className={tabActive === 'partners' ? 'tab-active' : 'tab-not-active'} >Partners</Link>
                 </li>
                 <li className='mx-6 font-bold'>
-                    <Link to={'/blog'} className='font-bold'>Blog</Link>
+                    <Link onClick={() => setTabActive('blog')} to={'/blog'} className={tabActive === 'blog' ? 'tab-active' : 'tab-not-active'} >Blog</Link>
                 </li>
-                <li id='arrow-menu' onClick={() => arrowMenu()} className='mx-6 font-bold hover:cursor-pointer flex flex-col items-center justify-center'>
-                    Más
+                <li id='arrow-menu' onClick={() => arrowMenu()} className='mx-6 font-bold hover:cursor-pointer flex items-center justify-center gap-2'>
+                    <span className={tabActive === 'mas' ? 'tab-active' : 'tab-not-active'}>Más</span> 
+                    <img className={arrowDown ? 'rotateArrow' : 'rotateArrowOut ' + (tabActive === 'mas' ? 'tab-active' : 'tab-not-active') } src={arrow_down} alt="" />
                     {menuArrow}
                 </li>
             </ul>
@@ -72,6 +131,10 @@ const Header = () => {
         </div>
         <div className="header_btn">
             <a href="#">Empezar Gratis</a>
+        </div>
+        <div onClick={() => mobileMenu()} className="bars">
+            <img src={bars} alt="" />
+            {menuMobile}
         </div>
     </div>
   )

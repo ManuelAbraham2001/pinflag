@@ -16,49 +16,57 @@ const ClientesHome = () => {
     
 
     let test = (e) => {
-        console.log(e);
         statusCard ? setStatusCard(false) : setStatusCard(true)
     }
 
   return (
     <>  
     <div className='orders_usuarios flex items-center text-center'>
-        <h2>¡Hoy contamos con más de 
-        <div className='number_counter'>
-            <span>{clientes[0]}</span>
-        </div> 
-        <div className='number_counter'>
-            <span>{clientes[1]}</span>
-        </div> 
-        <div className='number_counter'>
-            <span>{clientes[2]}</span>
-        </div> 
-        <div className='number_counter'>
-            <span>{clientes[3]}</span>
-        </div> 
-        <div className='number_counter'>
-            <span>{clientes[4]}</span>
-        </div> 
-        
-        orders administrados y 
-        <div className='number_counter'>
-            <span>{clientes[0]}</span>
-        </div> 
-        <div className='number_counter'>
-            <span>{clientes[1]}</span>
-        </div> 
-        <div className='number_counter'>
-            <span>{clientes[2]}</span>
-        </div> 
-        <div className='number_counter'>
-            <span>{clientes[3]}</span>
-        </div> 
-        <div className='number_counter'>
-            <span>{clientes[4]}</span>
-        </div> 
-        usuarios
+        <div className="orders_title_container flex flex-col items-center justify-center gap-4 mx-auto">
+            <div className='orders_title flex items-center justify-center gap-4'>
+                <h2>¡Hoy contamos con más de </h2>
+                <div className="numbers_container flex items-center justify-center">
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[0]}</span>
+                    </div>
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[1]}</span>
+                    </div>
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[2]}</span>
+                    </div>
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[3]}</span>
+                    </div>
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[4]}</span>
+                    </div>
+                </div>
+                <h2> pedidos</h2>
+            </div>
+            <div className='orders_title numbers_container flex items-center justify-center'>
+                <h2>administrados y </h2>
+                <div className="numbers_container flex items-center justify-center">
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[0]}</span>
+                    </div>
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[1]}</span>
+                    </div>
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[2]}</span>
+                    </div>
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[3]}</span>
+                    </div>
+                    <div className="number_counter flex items-center justify-center shadow_inner">
+                        <span>{clientes[4]}</span>
+                    </div>
+                </div>
+                <h2> usuarios!</h2>
+            </div>
 
-        </h2>
+        </div>
     </div>
     <div className="customers flex flex-col items-center justify-center gap-20">
         <div className="customers_title">

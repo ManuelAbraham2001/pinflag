@@ -1,6 +1,9 @@
 import React from 'react'
 import rectangulo from '../../ilustraciones/rectangulo.png'
 import hero from '../../ilustraciones/servicios/etiquetasHero.png'
+import transportistas from '../../ilustraciones/servicios/transportistas.png'
+import cotizar_envios from '../../ilustraciones/servicios/cotizar_envios.png'
+import imprime_etiquetas from '../../ilustraciones/servicios/imprime_etiquetas.png'
 
 const Creador_etiquetas = () => {
   return (
@@ -38,7 +41,7 @@ const Creador_etiquetas = () => {
                     <p className='max-w-xl'>Elige el que más te acomode, ya sea por precio o nivel de servicio. <span>Podrás configurar tus propias condiciones.</span></p>
                 </div>
                 <div className="pickup_services_img">
-                    <img src={rectangulo} alt="" />
+                    <img src={transportistas} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">
@@ -47,7 +50,7 @@ const Creador_etiquetas = () => {
                     <p className='max-w-xl'><span>Podrás conectar tu WMS a nuestra API para una integración automática o podrás imprimir las etiquetas desde nuestro administrador. </span></p>
                 </div>
                 <div className="pickup_services_img order-first">
-                    <img src={rectangulo} alt="" />
+                    <img src={imprime_etiquetas} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">
@@ -56,7 +59,7 @@ const Creador_etiquetas = () => {
                     <p className='max-w-xl'><span>Ahorra hasta un 30% en logística de transporte en cualquier tipo de envío gracias a nuestras tarifas.</span></p>
                 </div>
                 <div className="pickup_services_img">
-                    <img src={rectangulo} alt="" />
+                    <img src={cotizar_envios} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">

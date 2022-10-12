@@ -1,8 +1,11 @@
 import React from 'react'
 import hero from '../../ilustraciones/blog/hero_blog.png'
 import rectangulo from '../../ilustraciones/blog/rectangulo_blog.png'
+import right_arrow from '../../ilustraciones/blog/right-arrow.png'
 
 const Blog = () => {
+
+  
   return (
     <>
         <div className="blog_title">
@@ -39,7 +42,7 @@ const Blog = () => {
                     <h3>5 Julio 2022</h3>
                     <h2>¿Qué soluciones ecológicas puede adoptar tu ecommerce?</h2>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat m veniam, quis nostrud ase.</p>
-                    <a href="#">Leer más</a>
+                    <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" /></a>
                 </div>
             </div>
         </div>
@@ -55,7 +58,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="otrosBlogs_card flex flex-col gap-8">
@@ -64,7 +67,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="otrosBlogs_card flex flex-col gap-8">
@@ -73,7 +76,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="button_more flex items-center justify-center">
@@ -92,7 +95,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="otrosBlogs_card flex flex-col gap-8">
@@ -101,7 +104,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="otrosBlogs_card flex flex-col gap-8">
@@ -110,7 +113,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="button_more flex items-center justify-center">
@@ -129,7 +132,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="otrosBlogs_card flex flex-col gap-8">
@@ -138,7 +141,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="otrosBlogs_card flex flex-col gap-8">
@@ -147,7 +150,7 @@ const Blog = () => {
                             <h3>5 Julio 2022</h3>
                             <h2>Lorem ipsum ut sal enimst comodo </h2>
                             <p>Ut enim ad minim veniam, quis nostrud exercitalaboris nisi ut aliquip ex ea commodo consequ.</p>
-                            <a href="#">Leer más</a>
+                            <a className='flex items-center justify-center gap-2 w-fit' href="/blog/view">Leer más <img id='right-arrow' src={right_arrow} alt="" width='16px'/></a>
                         </div>
                     </div>
                     <div className="button_more flex items-center justify-center">

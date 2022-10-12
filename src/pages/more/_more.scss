@@ -42,11 +42,7 @@
         line-height: 45px;
     }
 
-    .icon_test{
-        width: 43px;
-        height: 43px;
-        background-color: $blanco;
-        border-radius: 50%;
+    .icon_align{
         position: absolute;
         left: 30px;
     }
@@ -90,12 +86,19 @@
         background-color: $calipso;
         color: $blanco;
         font-weight: 600;
+
+        &:hover{
+            background-color: $calipso-hover;
+        }
     }
 }
 
 
 
 .img_hover{
+    img{
+        width: 260px;
+    }
     :hover{
         cursor: pointer;
     }
@@ -115,10 +118,156 @@
     }
 }
 
-.c-calipso{
-    color: $calipso;
+.moreUs_hero_container{
+    margin: 100px 0;
+
+    .moreUs_title{
+        h1{
+            font-size: 69px;
+            font-weight: 700;
+            line-height: 104px;
+            color: $azul;
+            max-width: 800px;
+            span{
+               color: $calipso;
+            }
+        }
+    }
+
+    .moreUs_img_title{
+        p{
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34px;
+            text-align: center;
+
+        }
+    }
 }
-@media only screen and (min-width: 320px) and (max-width: 1280px) {
+
+.pointed_img{
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    border: 2px dashed gray;
+}
+
+.moreUs_img_normal{
+    position: relative;
+    top: 100px;
+}
+
+.moreUs_hero_staff{
+    width: 85%;
+    margin-top: 200px;
+}
+
+#staff2_img{
+    position: relative;
+    bottom: 100px;
+}
+
+#staff3_img{
+    position: relative;
+    top: 30px;
+}
+
+
+.moreUs_cards_title{
+    margin: 100px 0;
+    h2{
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 87px;
+        color: $azul;
+        span{
+           color: $calipso;
+        }
+    }
+}
+
+
+.staff_cards_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+  .tarjeta {
+    border: 1px solid #173554;
+    border-radius: 25px;
+    width: 350px;
+    max-width: 350px;
+    height: 350px;
+    padding: 2rem;
+    margin: 5rem 1.5rem;
+    text-align: center;
+    h2 {
+        font-size: 25px;
+        margin-bottom: 1rem;
+        position: relative;
+        bottom: 50%;
+        color: $azul;
+      }
+      p {
+          font-size: 17px;
+        font-style: italic;
+        position: relative;
+        bottom: 50%;
+        color: $azul;
+      }
+  }
+
+  .button{
+      text-align: center;
+      padding: 5px;
+      border-radius: 99px;
+      background-color: #ddd;
+      position: relative;
+      bottom: 12.5%;
+      color: $azul;
+  }
+  .linkedin{
+      position: relative;
+      bottom: 65%;
+      left: 100%;
+  }
+  .profile-pic{
+      position: relative;
+      border-radius: 99px;
+      bottom: 35%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .looking_for_you_content{
+    background-color: $lila;
+    padding: 150px;
+    
+    h2{
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 90px;
+        color: $blanco;
+    }
+
+    a{
+        color: $blanco;
+        padding: 10px 35px;
+        font-weight: 700;
+        font-size: 60px;
+        background-color: $azul;
+        border-radius: 60px;
+
+        &:hover{
+            background-color: $azul-hover;
+        }
+    }
+  }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
     .more_title{
 
         margin: 20px 0;
@@ -157,7 +306,7 @@
             text-align: center;
         }
     
-        .icon_test{
+        .icon_align{
             display: none;
         }
     }
@@ -232,5 +381,227 @@
             font-size: 1rem;
             line-height: 25px;
         }
+    }
+
+    #staff2_img, #staff3_img{
+        position: initial;
+    }
+    
+    .moreUs_title{
+        h1{
+            font-size: 2rem !important;
+            line-height: 50px !important;
+            text-align: center;
+        }
+    }
+
+    .moreUs_img_title{
+        p{
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34px;
+            text-align: center;
+
+        }
+    }
+
+    .moreUs_hero_container{
+        margin: 50px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .moreUs_img_normal{
+        width: 100%;
+        img{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .moreUs_hero_staff, .moreUs_hero_content{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .tarjeta {
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            bottom: 50%;
+            color: $azul;
+        }
+        p {
+            font-size: 17px;
+            font-style: italic;
+            position: relative;
+            bottom: 50%;
+            color: $azul;
+        }
+    }
+
+    .looking_for_you_content{
+        background-color: $lila;
+        padding: 30px;
+        
+        h2{
+            font-size: 2rem;
+            line-height: 40px;
+            text-align: center;
+        }
+    
+        a{
+            padding: 5px 20px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+    .more_title{
+
+        margin: 80px 0;
+    
+        h1{
+            font-size: 2.4rem;
+            line-height: 40px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    
+        p{
+            max-width: 90%;
+            font-size: 1.4rem;
+            line-height: 20px;
+        }
+    
+    }
+    
+    .customer_benefits_title{
+        font-size: 2.4rem;
+        line-height: 30px;
+        text-align: center;
+
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+    
+    .customer_benefits_card{
+        width: 90%;
+        margin: 15px 0;
+        height: 122px;
+        justify-content: center;
+        width: 95%;
+
+        p{
+            max-width: 90%;
+            font-size: 1.4rem;
+            line-height: 20px;
+            margin-left: 40px;
+            text-align: center;
+        }
+    
+        .icon_align{
+            left: 20px;
+        }
+    }
+    
+    .start_customers_title{
+    
+        text-align: center;
+        font-size: 2.4rem;
+        h2{
+            margin: 20px 0;
+        }
+    }
+    
+    .start_customers_container{
+        margin: 50px 0;
+        flex-direction: column;
+        gap: 20px;
+        img{
+            width: 90%;
+            margin: 0 auto;
+            order: 1;
+        }
+        .start_customers_content_img{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    
+    .start_customers_content{
+    
+        max-width: 90%;
+        min-height: auto;
+        align-items: center;
+        text-align: center;
+
+        h2{
+            font-size: 2.4rem;
+            line-height: 30px;
+        }
+    
+        p{
+            font-size: 1.4rem;
+            line-height: 25px;
+        }
+    
+        a{
+            border-radius: 30px;
+            font-size: 1.4em;
+            padding: 10px 50px;
+        }
+    }
+    
+    .img_hover{
+        :hover{
+            cursor: pointer;
+        }
+    }
+    
+    .start_stores{
+    
+        margin: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+
+        img{
+            order: 1;
+        }
+    
+        p{
+            max-width: 90%;
+            font-size: 1.4rem;
+            line-height: 25px;
+        }
+    }
+
+    .looking_for_you_content{
+        background-color: $lila;
+        padding: 100px;
+        
+        h2{
+            font-size: 2.4rem;
+            line-height: 40px;
+            text-align: center;
+        }
+    
+        a{
+            padding: 5px 20px;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .button {
+        position: relative;
+        bottom: 45.5%;
     }
 }

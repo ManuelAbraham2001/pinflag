@@ -114,10 +114,10 @@ export const Partners = () => {
             <div className="filters_logos flex items-start justify-around">
                 <div className="filters">
                     <ul>
-                        <li> <button onClick={() => setFiltro('')}>Todos</button> </li>
-                        <li> <button onClick={() => setFiltro(1)}>Filtro 1</button> </li>
-                        <li> <button onClick={() => setFiltro(2)}>Filtro 2</button> </li>
-                        <li> <button onClick={() => setFiltro(3)}>Filtro 3</button> </li>
+                        <li> <button className={filtro === '' ? 'tab-active' : ''} onClick={() => setFiltro('')}>Todos</button> </li>
+                        <li> <button className={filtro === 1 ? 'tab-active' : ''} onClick={() => setFiltro(1)}>Filtro 1</button> </li>
+                        <li> <button className={filtro === 2 ? 'tab-active' : ''} onClick={() => setFiltro(2)}>Filtro 2</button> </li>
+                        <li> <button className={filtro === 3 ? 'tab-active' : ''} onClick={() => setFiltro(3)}>Filtro 3</button> </li>
                     </ul>
                 </div>
                 <div className="logos grid grid-cols-4">

@@ -1,6 +1,6 @@
 import React from 'react'
 import servicios from '../../ilustraciones/servicios/servicios.svg'
-import pickups1 from '../../ilustraciones/servicios/pickups1.svg'
+import pickups1 from '../../ilustraciones/servicios/pickups1.png'
 import pickups2 from '../../ilustraciones/servicios/pickups2.svg'
 import pickups3 from '../../ilustraciones/servicios/pickups3.svg'
 import pickups4 from '../../ilustraciones/servicios/pickups4.svg'
@@ -43,7 +43,7 @@ const Pickups = () => {
                     <p className='max-w-xl'>A los clientes les encanta, y a nosotros también. <span>El 23% de los consumidores compra con esta</span> opciones de despacho a tus clientes.</p>
                 </div>
                 <div className="pickup_services_img">
-                    <img src={pickups1} alt="" />
+                    <img id='map-pickups' src={pickups1} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">
@@ -76,7 +76,7 @@ const Pickups = () => {
             <div className="pickup_services flex items-center justify-evenly shadow-lg">
                 <div className="pickup_services_content flex flex-col items-start justify-center gap-10">
                     <h2>Elige al transportista <br /> <span>que tu prefieras</span></h2>
-                    <p className='max-w-2xl'>Elige con que transportista quieres despachar tus pedidos. Puedes elegir por servicio, o tarifa. <span>Todo en un solo lugar.</span></p>
+                    <p id='pickup_services_p' className='max-w-2xl'>Elige con que transportista quieres despachar tus pedidos. Puedes elegir por servicio, o tarifa. <span>Todo en un solo lugar.</span></p>
                 </div>
                 <div className="pickup_services_img">
                     <img className='camion' src={camion} alt="" />

@@ -8,6 +8,12 @@ import more1 from '../../ilustraciones/clientes/more1.png'
 import playstore from '../../ilustraciones/clientes/playstore.png'
 import appstore from '../../ilustraciones/clientes/appstore.png'
 import mobileapp from '../../ilustraciones/clientes/mobileapp.png'
+import sigue_pedidos from '../../ilustraciones/clientes/sigue_pedido.png'
+import retira_pedidos from '../../ilustraciones/clientes/retira_pedido.png'
+import informacion_clientes from '../../ilustraciones/clientes/informacion_clientes.svg'
+import retira_clientes from '../../ilustraciones/clientes/retira_clientes.svg'
+import seguridad_clientes from '../../ilustraciones/clientes/seguridad_clientes.svg'
+import boleta_clientes from '../../ilustraciones/clientes/boleta_clientes.svg'
 
 const marcas = [
     {
@@ -38,7 +44,6 @@ const Mores = () => {
 
     const [text, setText] = useState(marcas[0].texto)
 
-    console.log(text);
 
   return (
     <>
@@ -52,19 +57,19 @@ const Mores = () => {
                 <h2>Conoce tus beneficios</h2>
             </div>
             <div className="customer_benefits_card flex items-center justify-center">
-                <span className='icon_test'></span>
+                <span className='icon_align'><img src={informacion_clientes} alt="" /></span>
                 <p className='text-center'>Información centralizada. Ten Toda la información de tus compras en tu App Pinflag</p>
             </div>
             <div className="customer_benefits_card flex items-center justify-center">
-                <span className='icon_test'></span>
+                <span className='icon_align'><img src={retira_clientes} alt="" /></span>
                 <p>Retirá tus pedidos en tu casa, o en lugares cercanos.</p>
             </div>
             <div className="customer_benefits_card flex items-center justify-center">
-                <span className='icon_test'></span>
+                <span className='icon_align'><img src={seguridad_clientes} alt="" /></span>
                 <p>Seguridad de que tu pedido está en camino a ser entregado.</p>
             </div>
             <div className="customer_benefits_card flex items-center justify-center">
-                <span className='icon_test'></span>
+                <span className='icon_align'><img src={boleta_clientes} alt="" /></span>
                 <p>Ten tu boleta y la dirección de entrega en tu App</p>
             </div>
         </div>
@@ -106,7 +111,7 @@ const Mores = () => {
             </div>
 
             <div className="start_customers_container flex items-center justify-evenly w-full">
-                <img src={mobileapp} alt=""/>
+                <img src={sigue_pedidos} alt=""/>
                 <div className="start_customers_content flex flex-col items-start justify-center gap-10">
                     <h2>Sigue tu pedido</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -119,7 +124,7 @@ const Mores = () => {
                     <h2>Retira tu pedido</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <img src={mobileapp} alt=""/>
+                <img src={retira_pedidos} alt=""/>
             </div>
 
         </div>

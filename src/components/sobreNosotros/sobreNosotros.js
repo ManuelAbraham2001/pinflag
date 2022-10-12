@@ -1,128 +1,175 @@
-import React from "react";
-import "./sobreNosotros.css";
+import React from 'react'
+import staff1 from '../../ilustraciones/nosotros/staff/staff1.png'
+import staff2 from '../../ilustraciones/nosotros/staff/staff2.png'
+import staff3 from '../../ilustraciones/nosotros/staff/staff3.png'
+import npc from '../../ilustraciones/nosotros/staff/npc.png'
 import linkedin from '../../ilustraciones/nosotros/staff/linkedin.png';
-import staff1 from '../../ilustraciones/nosotros/staff/staff1.png';
-import staff2 from '../../ilustraciones/nosotros/staff/staff2.png';
-import staff3 from '../../ilustraciones/nosotros/staff/staff3.png';
 
-const sobreNosotros = () => {
-  const staff = [
-    {
-      foto: staff1,
-      nombre: "Rosmarie Bahrens",
-      bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-      puesto: "Graphic Designer",
-      linkedin: "#",
-    },
-    {
-        foto: staff2,
-      nombre: "Jun Wang",
-      bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-      puesto: "Marketing",
-      linkedin: "#",
-    },
-    {
-        foto: staff3,
-      nombre: "Juan José García",
-      bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-      puesto: "CEO",
-      linkedin: "#",
-    },
-    {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
-      {
-        foto: staff3,
-        nombre: "NPC",
-        bio: "asklñdas ilnajdjlk fjnifalopagjkldfkjlgdf klgpeo gmdflk mbdflkdfjbdlfmbdflm dfkmdflkdfm vdk opv",
-        puesto: "Random",
-        linkedin: "#",
-      },
+const SobreNosotros = () => {
 
-  ];
+    const staff = [
+        {
+            profilePicture: staff1,
+            nombre: 'Rosmarie Behrens',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'Graphic Designer',
+            linkedin: 'www.linkedlin.com'
+        },
+        {
+            profilePicture: staff2,
+            nombre: 'Jun Wang',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'Marketing',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: staff3,
+            nombre: 'Juan Jose Garcia',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'CEO',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+        {
+            profilePicture: npc,
+            nombre: 'Pepito Perez',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            cargo: 'UX/UI Designer',
+            linkedin: 'www.linkedin.com'
+        },
+    ]
 
   return (
-    <div className="contenedor">
-      {staff.map((e) => (
-        <div className="tarjeta">
-          <img src={e.foto} className="profile-pic"/>
-          <a src={e.linkedin} className="linkedin">
-            <img src={linkedin}></img>
-          </a>
-          <h2>{e.nombre}</h2>
-          <p>"{e.bio}"</p>
-          <div className="button">{e.puesto}</div>
+    <>
+        <div className="moreUs_cards_title">
+            <h2 className='text-center'>Sobre <span>Nosotros</span></h2>
         </div>
-      ))}
-    </div>
-  );
-};
+        <div className="staff_cards_container">
+            {staff.map((e) => (
+                <div className="tarjeta">
+                <img src={e.profilePicture} className="profile-pic"/>
+                <a src={e.linkedin} className="linkedin">
+                    <img src={linkedin}></img>
+                </a>
+                <h2>{e.nombre}</h2>
+                <p>"{e.info}"</p>
+                <div className="button">{e.cargo}</div>
+                </div>
+            ))}
+        </div>
+    </>
+  )
+}
 
-export default sobreNosotros;
+export default SobreNosotros

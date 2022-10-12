@@ -1,5 +1,8 @@
 import React from 'react'
 import heroImg	from '../../ilustraciones/servicios/omnicanalidad_hero.png'
+import retiroEnTienda	from '../../ilustraciones/servicios/retiroEnTienda.png'
+import aumentaVentas	from '../../ilustraciones/servicios/aumentaVentas.png'
+import stockEnTienda	from '../../ilustraciones/servicios/stockTienda.png'
 import rectangulo from '../../ilustraciones/rectangulo.png'
 
 const Omnicanalidad = () => {
@@ -37,7 +40,7 @@ const Omnicanalidad = () => {
                     <p className='max-w-xl'>Aumenta tus ventas ofreciéndole a tus tiendas tarifas más accesibles. <span>El 24% de los consumidores compra con esta opción.</span></p>
                 </div>
                 <div className="pickup_services_img">
-                    <img src={rectangulo} alt="" />
+                    <img src={retiroEnTienda} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">
@@ -46,7 +49,7 @@ const Omnicanalidad = () => {
                     <p className='max-w-xl'>Disminuye los problemas de inventario.<span>Ofrece hasta un 70% más de stock para retiro en tienda.</span></p>
                 </div>
                 <div className="pickup_services_img order-first">
-                    <img src={rectangulo} alt="" />
+                    <img src={stockEnTienda} alt="" />
                 </div>
             </div>
 			<div className="pickup_services flex items-center justify-evenly shadow-lg">
@@ -55,7 +58,7 @@ const Omnicanalidad = () => {
                     <p className='max-w-xl'>Nuestras tiendas asociadas <span>han aumentado un 30% de venta.</span></p>
                 </div>
                 <div className="pickup_services_img">
-                    <img src={rectangulo} alt="" />
+                    <img src={aumentaVentas} alt="" />
                 </div>
             </div>
             <div className="pickup_services flex items-center justify-evenly shadow-lg">

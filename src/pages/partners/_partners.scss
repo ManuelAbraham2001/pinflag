@@ -215,7 +215,7 @@
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
     .partners_hero{
         position: relative;
         padding: 20px;
@@ -322,7 +322,7 @@
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
     .partners_hero{
         position: relative;
         padding: 20px;
@@ -338,12 +338,12 @@
             // height: 500px;
 
             .partners_title{
-                font-size: 2.4rem;
-                line-height: 45px;
+                font-size: 2.2rem;
+                line-height: 35px;
             }
             .partners_p{
-                font-size: 1.4rem;
-                line-height: 30px;
+                font-size: 1.2rem;
+                line-height: 25px;
             }
             .bar{
                 width: 95%;
@@ -361,22 +361,52 @@
             margin: 20px 0;
         }
     }
-    
-    .benefits_card, .benefits_card2{
 
-        margin: 20px auto;
-        align-items: start;
-        
-        h2{
-            font-size: 2.2rem;
-            line-height: 40px;
+    .benefits_card_container{
+        gap: 20px;
+        .benefits_card{
+
+            margin: 20px auto;
+            align-items: center;
+            
+            h2{
+                font-size: 2rem;
+                line-height: 25px;
+            }
+            p{
+                font-size: 1.4rem;
+                line-height: 25px;
+                margin: 30px 0;
+            }
         }
-        p{
-            font-size: 1.6rem;
-            line-height: 35px;
-            margin: 30px 0;
+    
+        .benefits_card2{
+            margin: 20px auto;
+            align-items: center;
+            
+            h2{
+                font-size: 2rem;
+                line-height: 25px;
+                max-width: 90%;
+            }
+            p{
+                font-size: 1.4rem;
+                line-height: 25px;
+                margin: 30px 0;
+                max-width: 90%;
+            }
+        }
+
+        img{
+            width: 300px;
+        }
+
+        .bar{
+            height: 750px;
         }
     }
+    
+    
     
     .partners_logos{
         padding: 10px;
